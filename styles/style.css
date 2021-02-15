@@ -43,6 +43,12 @@ a {
   background: url("../images/physics.png") center / 44px 44px no-repeat;
 }
 
+.museumspan {
+  padding-right: 5px;
+  border-right: 5px black solid;
+  border-bottom: 3px black solid;
+}
+
 /*search*/
 
 .search__icon {
@@ -102,6 +108,15 @@ nav li {
 nav a {
   text-decoration: none;
   font-family: var(--heading-font);
+}
+
+nav a:hover {
+  border-bottom: 5px solid var(--link-color);
+  transition: border-bottom 0.1s linear;
+}
+
+nav .active {
+  border-bottom: 5px solid var(--link-color);
 }
 
 #hamburger-menu__icon ~ nav {
