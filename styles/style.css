@@ -171,3 +171,23 @@ nav .active {
 .explore__icon {
   background: url("../images/explore.png") center / 44px 44px no-repeat;
 }
+
+.contact__icon {
+  background: url("../images/contact.png") center / 44px 44px no-repeat;
+}
+
+.three-d__icon {
+  background: url("../images/3D.png") center / 44px 44px no-repeat;
+}
+
+.biology__icon {
+  background: url("../images/biology.png") center / 44px 44px no-repeat;
+}
+
+.physics__icon {
+  background: url("../images/physics.png") center / 44px 44px no-repeat;
+}
+
+.chemistry__icon {
+  background: url("../images/chemistry.png") center / 44px 44px no-repeat;
+}
