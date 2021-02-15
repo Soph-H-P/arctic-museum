@@ -1,0 +1,158 @@
+/*----------------GLOBAL STYLES-----------------*/
+@import "imports/variables.css";
+
+* {
+  border: 1px black solid;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font), cursive;
+}
+
+h4,
+p,
+a {
+  font-family: var(--paragraph-font), sans-serif;
+}
+
+a {
+  color: var(--dark-font-color);
+}
+
+/*----------------HEADER & FOOTER-----------------*/
+
+/*HEADER*/
+/*logo*/
+.logo__wrapper {
+  display: inline-block;
+}
+
+.logo__top {
+  display: flex;
+}
+
+.logo__top h1,
+.logo__bottom h2 {
+  margin: 0px;
+}
+
+.logo__icon {
+  background: url("../images/physics.png") center / 44px 44px no-repeat;
+}
+
+/*search*/
+
+.search__icon {
+  background: url("../images/search.png") center / 44px 44px no-repeat;
+}
+
+/*nav*/
+.menu__icon {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-background-color);
+}
+
+.menu__icon div {
+  width: 28px;
+  height: 5px;
+  border-radius: 5px;
+  margin: 1.5px 0px;
+}
+
+.bluebar-top,
+.bluebar-bottom {
+  background-color: var(--link-color);
+  position: relative;
+  transition-property: rotate;
+  transition-duration: 1s;
+}
+
+.redbar {
+  background-color: var(--main-cta-color);
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+
+#hamburger-menu__icon {
+  display: none;
+}
+
+nav {
+  display: none;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  display: block;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: var(--heading-font);
+}
+
+#hamburger-menu__icon ~ nav {
+  display: none;
+}
+
+#hamburger-menu__icon:checked ~ nav {
+  display: inline-block;
+}
+/*bars to cross menu icon*/
+#hamburger-menu__icon:checked + .menu-checkbox__label .menu__icon .bluebar-top {
+  rotate: 45deg;
+  margin: 0px;
+  top: 6px;
+}
+
+#hamburger-menu__icon:checked + .menu-checkbox__label .menu__icon .bluebar-bottom {
+  rotate: 315deg;
+  margin: 0px;
+  bottom: 6.5px;
+}
+
+#hamburger-menu__icon:checked + .menu-checkbox__label .menu__icon .redbar {
+  opacity: 0;
+}
+
+/*FOOTER*/
+.insta-image__wrapper {
+  display: inline-flex;
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+}
+
+.insta-image__wrapper img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/*----------------CTA & ICONS-----------------*/
+.icon {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+}
+
+.ticket__icon {
+  background: url("../images/ticket.png") center / 44px 44px no-repeat;
+}
+
+.explore__icon {
+  background: url("../images/explore.png") center / 44px 44px no-repeat;
+}
