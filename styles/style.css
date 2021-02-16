@@ -50,10 +50,30 @@ a {
 }
 
 /*search*/
-
 .search__icon {
   background: url("../images/search.png") center / 44px 44px no-repeat;
 }
+
+#search-box__checkbox {
+  display: none;
+}
+
+#search-box__checkbox ~ div {
+  display: none;
+}
+
+#search-box__checkbox:checked ~ div {
+  display: inline-block;
+}
+
+/*#hamburger-menu__checkbox ~ nav {
+  display: none;
+}
+
+#hamburger-menu__checkbox:checked ~ nav {
+  display: inline-block;
+}*/
+
 
 /*nav*/
 .menu__icon {
@@ -88,7 +108,7 @@ a {
   transition-duration: 1s;
 }
 
-#hamburger-menu__icon {
+#hamburger-menu__checkbox {
   display: none;
 }
 
@@ -119,27 +139,27 @@ nav .active {
   border-bottom: 5px solid var(--link-color);
 }
 
-#hamburger-menu__icon ~ nav {
+#hamburger-menu__checkbox ~ nav {
   display: none;
 }
 
-#hamburger-menu__icon:checked ~ nav {
+#hamburger-menu__checkbox:checked ~ nav {
   display: inline-block;
 }
 /*bars to cross menu icon*/
-#hamburger-menu__icon:checked + .menu-checkbox__label .menu__icon .bluebar-top {
+#hamburger-menu__checkbox:checked + .menu-checkbox__label .menu__icon .bluebar-top {
   rotate: 45deg;
   margin: 0px;
   top: 6px;
 }
 
-#hamburger-menu__icon:checked + .menu-checkbox__label .menu__icon .bluebar-bottom {
+#hamburger-menu__checkbox:checked + .menu-checkbox__label .menu__icon .bluebar-bottom {
   rotate: 315deg;
   margin: 0px;
   bottom: 6.5px;
 }
 
-#hamburger-menu__icon:checked + .menu-checkbox__label .menu__icon .redbar {
+#hamburger-menu__checkbox:checked + .menu-checkbox__label .menu__icon .redbar {
   opacity: 0;
 }
 
