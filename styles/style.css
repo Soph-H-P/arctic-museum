@@ -6,16 +6,34 @@
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3 {
-  font-family: var(--heading-font), cursive;
+body {
+  margin: 100px 0px 0px 0px;
+  min-width: 320px;
 }
 
-h4,
+h1,
+h2 {
+  font-family: var(--heading-font), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+h3,
 p,
-a {
-  font-family: var(--paragraph-font), sans-serif;
+a,
+td {
+  font-family: var(--paragraph-font), "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 a {
@@ -25,9 +43,18 @@ a {
 /*----------------HEADER & FOOTER-----------------*/
 
 /*HEADER*/
+header {
+  position: fixed;
+  display: inline-block;
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--light-font-color);
+}
 /*logo*/
 .logo__wrapper {
   display: inline-block;
+  padding: 5px;
 }
 
 .logo__top {
@@ -39,19 +66,37 @@ a {
   margin: 0px;
 }
 
-.logo__icon {
-  background: url("../images/physics.png") center / 44px 44px no-repeat;
-}
-
-.museumspan {
-  padding-right: 5px;
-  border-right: 5px black solid;
-  border-bottom: 3px black solid;
-}
-
 /*search*/
-.search__icon {
-  background: url("../images/search.png") center / 44px 44px no-repeat;
+.search__wrapper {
+  position: relative;
+  max-width: 210px;
+  display: flex;
+  align-items: center;
+  background-color: var(--light-background-color);
+  border-radius: 30px;
+  padding: 2px;
+  margin: 0 auto;
+}
+
+.search-input__wrapper {
+  padding: 0px 0px 0px 10px;
+}
+
+.search-input__wrapper input {
+  font-size: 1rem;
+  max-width: 150px;
+  background-color: var(--light-background-color);
+  border: none;
+}
+
+.search-input__wrapper input:focus {
+  outline: none;
+  border-bottom: var(--link-color) 2px solid;
+}
+
+.search__wrapper label {
+  order: 2;
+  line-height: 0px;
 }
 
 #search-box__checkbox {
@@ -59,24 +104,14 @@ a {
 }
 
 #search-box__checkbox ~ div {
-  display: none;
-}
-
-#search-box__checkbox:checked ~ div {
   display: inline-block;
 }
-
-/*#hamburger-menu__checkbox ~ nav {
-  display: none;
-}
-
-#hamburger-menu__checkbox:checked ~ nav {
-  display: inline-block;
-}*/
-
 
 /*nav*/
 .menu__icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   display: flex;
   flex-direction: column;
   border-radius: 50%;
@@ -85,6 +120,12 @@ a {
   justify-content: center;
   align-items: center;
   background-color: var(--light-background-color);
+  cursor: pointer;
+}
+
+.menu__icon:hover {
+  width: 50px;
+  height: 50px;
 }
 
 .menu__icon div {
@@ -98,14 +139,14 @@ a {
 .bluebar-bottom {
   background-color: var(--link-color);
   position: relative;
-  transition-property: rotate;
-  transition-duration: 1s;
+  transition-property: transform;
+  transition-duration: 0.8s;
 }
 
 .redbar {
   background-color: var(--main-cta-color);
   transition-property: opacity;
-  transition-duration: 1s;
+  transition-duration: 0.8s;
 }
 
 #hamburger-menu__checkbox {
@@ -114,15 +155,19 @@ a {
 
 nav {
   display: none;
+  text-align: center;
+  min-width: 230px;
 }
 
 nav ul {
   padding: 0;
+  display: inline-block;
 }
 
 nav li {
   display: block;
   padding: 20px;
+  text-align: left;
 }
 
 nav a {
@@ -145,16 +190,23 @@ nav .active {
 
 #hamburger-menu__checkbox:checked ~ nav {
   display: inline-block;
+  position: absolute;
+  padding: 10px;
+  background: var(--menu-overlay-color);
+  backdrop-filter: blur(5px);
+  height: 100vh;
+  width: 100vw;
 }
+
 /*bars to cross menu icon*/
 #hamburger-menu__checkbox:checked + .menu-checkbox__label .menu__icon .bluebar-top {
-  rotate: 45deg;
+  transform: rotate(45deg);
   margin: 0px;
-  top: 6px;
+  top: 6.5px;
 }
 
 #hamburger-menu__checkbox:checked + .menu-checkbox__label .menu__icon .bluebar-bottom {
-  rotate: 315deg;
+  transform: rotate(-45deg);
   margin: 0px;
   bottom: 6.5px;
 }
@@ -177,6 +229,45 @@ nav .active {
   height: auto;
 }
 
+/*FOOTER*/
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--light-background-color);
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer h3 {
+  font-family: var(--heading-font), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.square-insta-images__div {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  gap: 5px;
+}
+
+.square-insta-images__div img {
+  object-fit: cover;
+}
+
+.quick-links__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.quick-links__wrapper a {
+  padding: 5px;
+}
+
 /*----------------CTA & ICONS-----------------*/
 .icon {
   display: inline-block;
@@ -184,30 +275,45 @@ nav .active {
   width: 44px;
 }
 
+.search__icon {
+  background: url("../images/search.svg") center / 44px 44px no-repeat;
+  cursor: pointer;
+}
+
+.insta__icon {
+  background: url("../images/instagram.svg") center / 44px 44px no-repeat;
+}
+
 .ticket__icon {
-  background: url("../images/ticket.png") center / 44px 44px no-repeat;
+  background: url("../images/ticket.svg") center / 44px 44px no-repeat;
 }
 
 .explore__icon {
-  background: url("../images/explore.png") center / 44px 44px no-repeat;
+  background: url("../images/explore.svg") center / 44px 44px no-repeat;
 }
 
 .contact__icon {
-  background: url("../images/contact.png") center / 44px 44px no-repeat;
+  background: url("../images/contact.svg") center / 44px 44px no-repeat;
 }
 
 .three-d__icon {
-  background: url("../images/3D.png") center / 44px 44px no-repeat;
+  background: url("../images/3D.svg") center / 44px 44px no-repeat;
 }
 
 .biology__icon {
-  background: url("../images/biology.png") center / 44px 44px no-repeat;
+  background: url("../images/biology.svg") center / 44px 44px no-repeat;
 }
 
 .physics__icon {
-  background: url("../images/physics.png") center / 44px 44px no-repeat;
+  background: url("../images/physics.svg") center / 44px 44px no-repeat;
 }
 
 .chemistry__icon {
-  background: url("../images/chemistry.png") center / 44px 44px no-repeat;
+  background: url("../images/chemistry.svg") center / 44px 44px no-repeat;
+}
+
+/*HERO SECTION*/
+
+.hero__section p {
+  font-weight: 600;
 }

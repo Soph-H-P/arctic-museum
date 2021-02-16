@@ -1,0 +1,127 @@
+@import "imports/variables.css";
+/*----------------------------------------MIN 3550PX----------*/
+@media (min-width: 355px) {
+  /*GLOBAL*/
+  /*FOOTER*/
+  .square-insta-images__div {
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  }
+}
+
+/*----------------------------------------MIN 610PX----------*/
+@media (min-width: 610px) {
+  /*GLOBAL STYLES*/
+
+  body {
+    margin: 150px 0px 0px 0px;
+  }
+
+  /*NAV BAR*/
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
+
+  .nav__wrapper  {
+    display: inline;
+  }
+
+  #hamburger-menu__checkbox ~ nav,
+  #hamburger-menu__checkbox:checked ~ nav {
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+  }
+
+  #hamburger-menu__checkbox ~ nav ul {
+    display: flex;
+    margin: 0px;
+  }
+
+  .menu__icon {
+    display: none;
+  }
+
+  /*search*/
+  .search__icon:hover {
+    background: url("../images/search.svg") center / 50px 50px no-repeat;
+  }
+
+  #search-box__checkbox {
+    display: none;
+  }
+
+  #search-box__checkbox ~ div {
+    display: none;
+  }
+
+  #search-box__checkbox:checked ~ div {
+    display: inline-block;
+  }
+
+  .search__wrapper {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+  }
+
+  .search-input__wrapper input {
+    font-size: 1rem;
+    max-width: 150px;
+  }
+
+  /*FOOTER*/
+  footer {
+    flex-direction: row;
+  }
+
+  .opening-hours__section table {
+    border-spacing: 10px 20px;
+  }
+
+  .square-insta-images__div {
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  }
+
+  .quick-links__wrapper a {
+    padding: 5px;
+    margin: 10px 0px;
+  }
+}
+
+/*----------------------------------------MIN 710PX----------*/
+@media (min-width: 710px) {
+  /*GLOBAL STYLES*/
+
+  .opening-hours__section table {
+    border-spacing: 2px;
+  }
+  .square-insta-images__div {
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  }
+
+  .quick-links__wrapper a {
+    padding: 5px;
+    margin: 0px;
+  }
+}
+
+/*----------------------------------------MIN 810PX----------*/
+@media (min-width: 810px) {
+  /*GLOBAL STYLES*/
+
+  /*NAV BAR*/
+  nav a {
+    font-size: 1.5rem;
+  }
+}
