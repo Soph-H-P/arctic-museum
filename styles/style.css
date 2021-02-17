@@ -3,6 +3,7 @@
 
 * {
   border: 1px black solid;
+  background-color: rgba(151, 195, 238, 0.253);
   box-sizing: border-box;
 }
 
@@ -251,6 +252,7 @@ footer h3 {
   display: grid;
   grid-template: 1fr 1fr 1fr / 1fr 1fr;
   gap: 5px;
+  margin-bottom: 10px;
 }
 
 .square-insta-images__div img {
@@ -282,6 +284,7 @@ footer h3 {
 
 .insta__icon {
   background: url("../images/instagram.svg") center / 44px 44px no-repeat;
+  margin-bottom: 10px;
 }
 
 .ticket__icon {

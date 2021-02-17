@@ -17,7 +17,7 @@
       <a href="index.html">
         <div class="logo__wrapper">
           <div class="logo__top">
-            <i class="logo__icon icon"></i>
+            <i class="physics__icon icon"></i>
             <h1>Arctic</h1>
           </div>
           <div class="logo__bottom">
@@ -26,15 +26,6 @@
         </div>
       </a>
 
-      <div class="search__wrapper">
-        <input type="checkbox" id="search-box__checkbox" />
-        <label for="search-box__checkbox">
-          <i class="search__icon icon"></i>
-        </label>
-        <div class="search-input__wrapper">
-          <input type="text" placeholder="Search..." />
-        </div>
-      </div>
       <div class="nav__wrapper">
         <input type="checkbox" id="hamburger-menu__checkbox" />
         <label class="menu-checkbox__label" for="hamburger-menu__checkbox">
@@ -46,6 +37,15 @@
         </label>
 
         <nav>
+          <form class="search__wrapper">
+            <input type="checkbox" id="search-box__checkbox" />
+            <label for="search-box__checkbox">
+              <i class="search__icon icon"></i>
+            </label>
+            <div class="search-input__wrapper">
+              <input id="search__input" type="text" placeholder="Search..." />
+            </div>
+          </form>
           <ul>
             <li><a class="active" href="explore.html">Explore</a></li>
             <li><a href="exhibitions.html">Exhibitions</a></li>
@@ -215,15 +215,18 @@
             <img src="images/sound-tube.jpg" alt="person with head inside a sound tube" />
           </div>
         </div>
+        <div class="insta__icon icon"></div>
       </section>
       <section class="quick-links__section">
         <h3>Quick Links</h3>
-        <a href="involved.html" class="quick-link__footer">Contact</a>
-        <a href="visit.html" class="quick-link__footer">Accessibility</a>
-        <a href="involved.html" class="quick-link__footer">Volunteering</a>
-        <a href="involved.html" class="quick-link__footer">Donate</a>
-        <a href="events.html" class="quick-link__footer">Special Events</a>
-        <a href="visit.html" class="quick-link__footer">Find Us</a>
+        <div class="quick-links__wrapper">
+          <a href="involved.html" class="quick-link__footer">Contact</a>
+          <a href="visit.html" class="quick-link__footer">Accessibility</a>
+          <a href="involved.html" class="quick-link__footer">Volunteering</a>
+          <a href="involved.html" class="quick-link__footer">Donate</a>
+          <a href="events.html" class="quick-link__footer">Special Events</a>
+          <a href="visit.html" class="quick-link__footer">Find Us</a>
+        </div>
       </section>
     </footer>
   </body>

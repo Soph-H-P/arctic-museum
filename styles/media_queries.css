@@ -2,6 +2,10 @@
 /*----------------------------------------MIN 3550PX----------*/
 @media (min-width: 355px) {
   /*GLOBAL*/
+  * {
+    background-color: rgba(175, 175, 179, 0.253);
+  }
+
   /*FOOTER*/
   .square-insta-images__div {
     grid-template: 1fr 1fr / 1fr 1fr 1fr;
@@ -11,7 +15,10 @@
 /*----------------------------------------MIN 610PX----------*/
 @media (min-width: 610px) {
   /*GLOBAL STYLES*/
-
+  * {
+    background-color: rgba(201, 155, 222, 0.253);
+  }
+  
   body {
     margin: 150px 0px 0px 0px;
   }
@@ -102,9 +109,11 @@
 /*----------------------------------------MIN 710PX----------*/
 @media (min-width: 710px) {
   /*GLOBAL STYLES*/
-
+  * {
+    background-color: rgba(235, 159, 198, 0.253);
+  }
   .opening-hours__section table {
-    border-spacing: 2px;
+    border-spacing: 2px 15px;
   }
   .square-insta-images__div {
     grid-template: 1fr 1fr / 1fr 1fr 1fr;
@@ -112,14 +121,20 @@
 
   .quick-links__wrapper a {
     padding: 5px;
-    margin: 0px;
+    margin: 5px 0px;
   }
 }
 
 /*----------------------------------------MIN 810PX----------*/
 @media (min-width: 810px) {
   /*GLOBAL STYLES*/
+  * {
+    background-color: rgba(153, 199, 184, 0.253);
+  }
 
+  body {
+    margin: 160px 0px 0px 0px;
+  }
   /*NAV BAR*/
   nav a {
     font-size: 1.5rem;
