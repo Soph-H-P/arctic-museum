@@ -1,0 +1,101 @@
+@import "imports/variables.css";
+
+/*-------------------------------------HERO SECTION*/
+.hero__section {
+  display: flex;
+  background: url("../images/building_small.jpg") top right/ 600px no-repeat;
+  justify-content: flex-end;
+}
+
+.hero__section h1 {
+  font-size: 1.5rem;
+}
+
+/*-------------------------------------TEXT DIV SECTIONS*/
+
+.text__div {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+/*-------------------------------------LINKS AREAS*/
+.explore__section,
+.exhibition__section,
+.this-month__section,
+.amenities__section {
+  padding: 2rem 0;
+  background-color: var(--light-font-color);
+}
+
+.explore__section {
+  background: var(--dark-font-color);
+  color: var(--light-font-color);
+}
+
+.explore__section a {
+  color: var(--light-font-color);
+}
+
+.explore-links__div,
+.exhibition-links__div,
+.amenities-links__div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.expanding-image__div {
+  margin: 2rem 0;
+}
+
+.expanding-image__div h3 {
+  position: relative;
+}
+
+.expanding-image__div img {
+  width: 180px;
+  margin-bottom: 1rem;
+}
+
+.expanding-image__div a:hover img {
+  transform: scale(1.1);
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+
+.expanding-image__div a:hover h3 {
+  transform: scale(1.1);
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+
+.circular-image img {
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/*-------------------------------------THIS MONTH SECTION*/
+.this-month__section {
+  color: var(--light-font-color);
+  background: url("../images/building-night.jpg") 100% 70% no-repeat;
+  min-height: 250px;
+}
+
+.this-month__section img {
+  display: none;
+  align-self: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.this-month-text__div {
+  justify-self: end;
+  align-self: center;
+  margin: 10px;
+}
+
+.this-month__section p {
+  max-width: 600px;
+}

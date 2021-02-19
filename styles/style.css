@@ -2,32 +2,40 @@
 @import "imports/variables.css";
 
 * {
-  border: 1px black solid;
-  background-color: rgba(151, 195, 238, 0.253);
+  /* background-color: rgba(151, 195, 238, 0.253);  */
   box-sizing: border-box;
 }
 
 body {
-  margin: 100px 0px 0px 0px;
   min-width: 320px;
+  margin: 0;
+}
+
+main {
+  margin: 80px 0px 0px 0px;
+  max-width: 1300px;
 }
 
 h1,
 h2 {
   font-family: var(--heading-font), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 h3 {
   font-size: 1rem;
   font-weight: 800;
+  margin: 0 auto;
+  width: max-content;
 }
 
 h3,
@@ -39,6 +47,11 @@ td {
 
 a {
   color: var(--dark-font-color);
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5rem;
 }
 
 /*----------------HEADER & FOOTER-----------------*/
@@ -51,6 +64,7 @@ header {
   width: 100%;
   z-index: 1000;
   background-color: var(--light-font-color);
+  box-shadow: 0 2px 10px 0px var(--dark-font-color);
 }
 /*logo*/
 .logo__wrapper {
@@ -62,9 +76,13 @@ header {
   display: flex;
 }
 
-.logo__top h1,
+.logo__top h1 {
+  margin: 0 10px;
+}
+
 .logo__bottom h2 {
   margin: 0px;
+  font-size: 1.3rem;
 }
 
 /*search*/
@@ -167,6 +185,7 @@ nav ul {
 
 nav li {
   display: block;
+  position: relative;
   padding: 20px;
   text-align: left;
 }
@@ -176,9 +195,32 @@ nav a {
   font-family: var(--heading-font);
 }
 
-nav a:hover {
-  border-bottom: 5px solid var(--link-color);
-  transition: border-bottom 0.1s linear;
+nav a::after,
+.expanding-image__div a h3::after,
+.skip-to__section a::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 15px;
+  width: 0px;
+  height: 5px;
+  background: var(--link-color);
+  transition: 0.3s all;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.expanding-image__div a h3::after,
+.skip-to__section a::after {
+  bottom: -3px;
+}
+
+.expanding-image__div a:hover h3::after,
+.skip-to__section a:hover::after {
+  bottom: -3px;
+  width: 100%;
 }
 
 nav .active {
@@ -236,12 +278,14 @@ footer {
   flex-direction: column;
   justify-content: space-around;
   background-color: var(--light-background-color);
+  padding-top: 2rem;
 }
 
 footer section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1rem auto;
 }
 
 footer h3 {
@@ -271,6 +315,7 @@ footer h3 {
 }
 
 /*----------------CTA & ICONS-----------------*/
+/*icons*/
 .icon {
   display: inline-block;
   height: 44px;
@@ -315,8 +360,62 @@ footer h3 {
   background: url("../images/chemistry.svg") center / 44px 44px no-repeat;
 }
 
+/*graphics*/
+.graphic {
+  height: 200px;
+}
+
+/*ctas*/
+.cta-button {
+  display: flex;
+  position: relative;
+  justify-content: end;
+  width: 200px;
+  height: 48px;
+  border-radius: 50px;
+  background-color: var(--main-cta-color);
+  color: var(--light-font-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  align-items: center;
+  padding: 2px;
+  margin: 1.5rem auto;
+}
+
+.cta-button:hover {
+  transform: translatey(-10px);
+  box-shadow: 0 20px 10px -10px var(--dark-font-color);
+}
+
+.cta-button p {
+  /* padding-left: 3rem; */
+  position: absolute;
+  right: 4rem;
+}
+
+.non-dominant-cta {
+  background-color: var(--light-font-color);
+  color: var(--main-cta-color);
+  border: solid 2px var(--main-cta-color);
+}
+
 /*HERO SECTION*/
+
+.hero__section {
+  display: flex;
+  min-height: 240px;
+  background-size: cover;
+}
+
+.hero__section h1 {
+  margin: 5px 10px;
+}
 
 .hero__section p {
   font-weight: 600;
+  margin: 10px;
+}
+
+.hero-image-title__wrapper img {
+  display: none;
 }
