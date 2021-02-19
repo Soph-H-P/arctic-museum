@@ -64,12 +64,22 @@
 
   /*EXPLORE PAGE*/
 
-  .explore-hero__section {
+  .explore-page-only .hero__section {
     background: url("../images/plasma_tube-hero.jpg") 30% 10% no-repeat;
   }
 
   .hero-image-title__wrapper img {
     display: block;
+  }
+
+  /*EXHIBITIONS PAGE*/
+  .exhibitions-page-only .hero__section {
+    background: url("../images/sea_eagle-hero-small.jpg") 70% 10% no-repeat;
+  }
+
+  .exhibition-img__wrapper {
+    width: 400px;
+    height: 220px;
   }
 }
 
@@ -215,6 +225,17 @@
   .skip-to__section li a {
     text-decoration: none;
   }
+
+  /*EXHIBITIONS PAGE*/
+  .exhibitions__section p {
+    max-width: 500px;
+    margin: 1rem auto;
+  }
+
+  .exhibition-img__wrapper {
+    width: 500px;
+    height: 300px;
+  }
 }
 
 /*----------------------------------------MIN 710PX----------*/
@@ -248,6 +269,17 @@
   /*EXPLORE PAGE*/
   .explore-card {
     padding: 2rem;
+  }
+
+  /*EXHIBITION PAGE*/
+  .exhibitions__section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto 3fr;
+    grid-template-areas:
+      "header" "image"
+      "" "image"
+      "text" "image";
   }
 }
 
@@ -318,6 +350,11 @@
   .skip-to__section {
     top: 152px;
     margin: 10.5rem 0 -10.5rem 0;
+  }
+
+  /*EXHIBITIONS PAGE*/
+  .exhibitions-page-only .hero__section {
+    background: url("../images/sea_eagle-hero.jpg") 40% 10% no-repeat;
   }
 }
 

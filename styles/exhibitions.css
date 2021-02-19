@@ -1,0 +1,71 @@
+@import "imports/variables.css";
+
+/*HERO SECTION*/
+
+.hero__section {
+  color: var(--dark-font-color);
+  background: url("../images/sea_eagle-hero-small.jpg") 35% 100% no-repeat;
+  background-size: cover;
+}
+
+.hero__section p {
+    padding-right: 2px;
+}
+
+/*EXHIBITION SECTIONS*/
+.exhibitions__section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.exhibition-text__div {
+    margin: 1rem;
+    grid-area: "text";
+}
+
+.exhibition-img__wrapper {
+  width: 310px;
+  height: 200px;
+  overflow: hidden;
+  justify-self: center;
+  margin: 0 auto;
+  grid-area: "image";
+}
+
+.exhibition-img__wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.exhibitions__section h2 {
+    grid-area: "header";
+}
+
+.image-with-label {
+  position: relative;
+}
+
+.subject__label {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  justify-content: end;
+  width: 160px;
+  height: 48px;
+  border-radius: 0 50px 50px 0;
+  background-color: var(--light-font-color);
+  color: var(--dark-font-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  align-items: center;
+  padding: 2px;
+  border: solid 2px var(--link-color);
+}
+
+.subject__label p {
+  position: absolute;
+  right: 3.5rem;
+}

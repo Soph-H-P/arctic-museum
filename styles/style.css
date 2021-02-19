@@ -292,6 +292,10 @@ footer h3 {
   font-family: var(--heading-font), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+footer a {
+  text-decoration: underline;
+}
+
 .square-insta-images__div {
   display: grid;
   grid-template: 1fr 1fr 1fr / 1fr 1fr;
@@ -388,7 +392,6 @@ footer h3 {
 }
 
 .cta-button p {
-  /* padding-left: 3rem; */
   position: absolute;
   right: 4rem;
 }
@@ -400,6 +403,24 @@ footer h3 {
 }
 
 /*HERO SECTION*/
+
+.hero__section {
+  background-size: cover;
+  color: var(--light-font-color);
+}
+
+.hero-text__div {
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.hero-image-title__wrapper {
+  display: flex;
+}
+
+.hero__section p {
+  margin-right: 3rem;
+}
 
 .hero__section {
   display: flex;
