@@ -38,12 +38,11 @@
   .visit-page-only .hero__section {
     background: url("../images/tromso-small.jpg") 0% 20% no-repeat;
     background-size: 170%;
-}
+  }
 
-.visit-page-only .hero-text__div {
-  width: 80%;
-}
-
+  .visit-page-only .hero-text__div {
+    width: 80%;
+  }
 }
 
 /*----------------------------------------MIN 455PX----------*/
@@ -53,12 +52,12 @@
     background: url("../images/special-events.jpg") 0% 20% no-repeat;
     background-size: 130%;
   }
- 
+
   /*VISIT PAGE*/
-   .visit-page-only .hero__section {
+  .visit-page-only .hero__section {
     background: url("../images/tromso-small.jpg") 0% 50% no-repeat;
     background-size: 170%;
-}
+  }
 }
 
 /*----------------------------------------MIN 570PX----------*/
@@ -126,12 +125,20 @@
     background-size: 160%;
   }
 
-   /*VISIT PAGE*/
-   .visit-page-only .hero__section {
+  /*VISIT PAGE*/
+  .visit-page-only .hero__section {
     height: 400px;
     background: url("../images/tromso-small.jpg") 0% 30% no-repeat;
     background-size: 190%;
-}
+  }
+
+  .food-drink .images__wrapper {
+    justify-self: center;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
 
 /*----------------------------------------MIN 610PX----------*/
@@ -309,12 +316,11 @@
 
   .event__card h2 {
     grid-area: title;
-    margin: 0px; 
+    margin: 0px;
   }
 
   .event__card h3 {
     grid-area: subheading;
-   
   }
 
   .event__card p {
@@ -325,11 +331,49 @@
     grid-area: cta;
   }
 
-   /*VISIT PAGE*/
-   .visit-page-only .hero__section {
+  /*VISIT PAGE*/
+  .visit-page-only .hero__section {
     background: url("../images/tromso-small.jpg") 0% 50% no-repeat;
     background-size: 200%;
-}
+  }
+
+  /*VISIT PAGE*/
+  .information__section {
+    flex-direction: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "location opening-hours"
+      "admission admission";
+  }
+
+  .location {
+    grid-area: location;
+  }
+
+  .opening-hours {
+    grid-area: opening-hours;
+  }
+
+  .admission {
+    grid-area: admission;
+  }
+
+  .get-involved__section div {
+    display: grid;
+    grid-template: auto auto auto auto / 1fr 3fr;
+    grid-template-areas:
+      "image title"
+      "image p-one"
+      "image p-two"
+      "image p-three";
+    gap: 0rem 3rem;
+  }
+
+  .get-involved__section img {
+    grid-area: image;
+    align-self: center;
+    justify-self: center;
+  }
 }
 
 /*----------------------------------------MIN 710PX----------*/
@@ -407,6 +451,11 @@
   .events-page-only .hero__section {
     background: url("../images/special-events.jpg") 0% 15% no-repeat;
     background-size: 150%;
+  }
+
+  /*VISIT PAGE*/
+  .visit-page-only h2 {
+    text-align: center;
   }
 }
 
@@ -494,11 +543,38 @@
     max-width: 1000px;
   }
 
-     /*VISIT PAGE*/
-     .visit-page-only .hero__section {
-      background-size: cover;
+  /*VISIT PAGE*/
+  .visit-page-only .hero__section {
+    background-size: cover;
   }
 
+  .information__section {
+    flex-direction: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "location opening-hours"
+      "location admission";
+  }
+
+  .information__section td {
+    padding: 0.2rem;
+  }
+
+  .location iframe {
+    height: 500px;
+  }
+
+  .food-drink .images__wrapper {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .food-drink .images__wrapper img {
+    width: 180px;
+    height: 180px;
+  }
 }
 
 /*----------------------------------------MIN 900PX----------*/
@@ -510,6 +586,12 @@
   .explore-card {
     padding: 1.5rem;
   }
+
+/*INVOLVED PAGE*/
+  .involved-page-only .email-us form {
+       max-width: 600px;
+}
+
 }
 
 /*----------------------------------------MIN 1250PX----------*/

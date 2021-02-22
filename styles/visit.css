@@ -6,9 +6,6 @@
   background-size: 170%;
 }
 
-/*INFORMATION SECTION*/
-/*LOCATION*/
-
 .location,
 .admission,
 .opening-hours,
@@ -17,7 +14,27 @@
 .accessibility__section {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin: 3rem 1rem;
+}
+
+/*INFORMATION SECTION*/
+
+/*LOCATION*/
+.information__section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.location p {
+  margin: 0.5rem auto 0 5%;
+}
+
+.information__section table {
+  align-self: center;
+}
+
+.information__section td {
+  padding: 0.8rem;
 }
 
 /*MAP*/
@@ -25,8 +42,32 @@ iframe {
   width: 90%;
   height: 300px;
   align-self: center;
+  margin-top: 1rem;
 }
 
-.information__section {
+.food-drink .images__wrapper {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food-drink .text__wrapper {
+  max-width: 790px;
+  align-self: center;
+}
+
+.images__wrapper .circular-image {
+  padding: 0.5rem;
+}
+
+.shop .images__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shop p,
+.accessibility__section p {
+  max-width: 700px;
+  align-self: center;
 }
