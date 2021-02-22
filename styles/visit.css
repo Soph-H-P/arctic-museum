@@ -1,0 +1,32 @@
+@import "imports/variables.css";
+
+.hero__section {
+  color: var(--dark-font-color);
+  background: url("../images/tromso-small.jpg") 0% 0% no-repeat;
+  background-size: 170%;
+}
+
+/*INFORMATION SECTION*/
+/*LOCATION*/
+
+.location,
+.admission,
+.opening-hours,
+.food-drink,
+.shop,
+.accessibility__section {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+/*MAP*/
+iframe {
+  width: 90%;
+  height: 300px;
+  align-self: center;
+}
+
+.information__section {
+  display: flex;
+}

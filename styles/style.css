@@ -54,6 +54,13 @@ p {
   line-height: 1.5rem;
 }
 
+.circular-image img {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 /*----------------HEADER & FOOTER-----------------*/
 
 /*HEADER*/

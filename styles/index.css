@@ -5,6 +5,7 @@
   display: flex;
   background: url("../images/building_small.jpg") top right/ 600px no-repeat;
   justify-content: flex-end;
+  color: var(--dark-font-color);
 }
 
 .hero__section h1 {
@@ -70,11 +71,7 @@
   transition-duration: 0.2s;
 }
 
-.circular-image img {
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-}
+
 
 /*-------------------------------------THIS MONTH SECTION*/
 .this-month__section {

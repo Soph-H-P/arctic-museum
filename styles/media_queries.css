@@ -1,5 +1,5 @@
 @import "imports/variables.css";
-/*----------------------------------------MIN 3550PX----------*/
+/*----------------------------------------MIN 370PX----------*/
 @media (min-width: 370px) {
   /*GLOBAL*/
   * {
@@ -33,6 +33,32 @@
   .explore-hero__section {
     background: url("../images/plasma_tube-hero.jpg") 35% 10% no-repeat;
   }
+
+  /*VISIT PAGE*/
+  .visit-page-only .hero__section {
+    background: url("../images/tromso-small.jpg") 0% 20% no-repeat;
+    background-size: 170%;
+}
+
+.visit-page-only .hero-text__div {
+  width: 80%;
+}
+
+}
+
+/*----------------------------------------MIN 455PX----------*/
+@media (min-width: 455px) {
+  /*EVENTS PAGE*/
+  .events-page-only .hero__section {
+    background: url("../images/special-events.jpg") 0% 20% no-repeat;
+    background-size: 130%;
+  }
+ 
+  /*VISIT PAGE*/
+   .visit-page-only .hero__section {
+    background: url("../images/tromso-small.jpg") 0% 50% no-repeat;
+    background-size: 170%;
+}
 }
 
 /*----------------------------------------MIN 570PX----------*/
@@ -78,9 +104,34 @@
   }
 
   .exhibition-img__wrapper {
+    width: 80%;
+  }
+
+  .subject__label {
+    top: -60px;
+  }
+
+  .exhibition-img__wrapper {
     width: 400px;
     height: 220px;
   }
+
+  .arctic-foxes__div {
+    display: flex;
+  }
+
+  /*EVENTS PAGE*/
+  .events-page-only .hero__section {
+    background: url("../images/special-events.jpg") 0% 0% no-repeat;
+    background-size: 160%;
+  }
+
+   /*VISIT PAGE*/
+   .visit-page-only .hero__section {
+    height: 400px;
+    background: url("../images/tromso-small.jpg") 0% 30% no-repeat;
+    background-size: 190%;
+}
 }
 
 /*----------------------------------------MIN 610PX----------*/
@@ -236,6 +287,49 @@
     width: 500px;
     height: 300px;
   }
+
+  /*EVENTS PAGE*/
+
+  .event__card {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "title image"
+      "subheading image"
+      "paragraph image"
+      "cta image";
+    column-gap: 4rem;
+  }
+
+  .event__card .circular-image {
+    grid-area: image;
+    align-self: center;
+  }
+
+  .event__card h2 {
+    grid-area: title;
+    margin: 0px; 
+  }
+
+  .event__card h3 {
+    grid-area: subheading;
+   
+  }
+
+  .event__card p {
+    grid-area: paragraph;
+  }
+
+  .event__card a {
+    grid-area: cta;
+  }
+
+   /*VISIT PAGE*/
+   .visit-page-only .hero__section {
+    background: url("../images/tromso-small.jpg") 0% 50% no-repeat;
+    background-size: 200%;
+}
 }
 
 /*----------------------------------------MIN 710PX----------*/
@@ -273,13 +367,46 @@
 
   /*EXHIBITION PAGE*/
   .exhibitions__section {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto auto 3fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
-      "header" "image"
-      "" "image"
-      "text" "image";
+      "header . "
+      "paragraph image"
+      "paragraph image";
+  }
+
+  main h2 {
+    text-align: left;
+    margin: 1rem;
+  }
+
+  .exhibition-img__wrapper {
+    width: 85%;
+    height: 100%;
+  }
+
+  .exhibitions__section h2 {
+    grid-area: header;
+  }
+
+  .image-with-label {
+    grid-area: image;
+    align-self: center;
+  }
+
+  .exhibition-text__div {
+    grid-area: paragraph;
+  }
+
+  .planet__decoration__div,
+  .arctic-foxes__div,
+  .not-displayed {
+    display: flex;
+  }
+
+  .events-page-only .hero__section {
+    background: url("../images/special-events.jpg") 0% 15% no-repeat;
+    background-size: 150%;
   }
 }
 
@@ -356,6 +483,22 @@
   .exhibitions-page-only .hero__section {
     background: url("../images/sea_eagle-hero.jpg") 40% 10% no-repeat;
   }
+
+  /*EVENTS PAGE*/
+  .events-page-only .hero__section {
+    background: url("../images/special-events.jpg") 0% 30% no-repeat;
+    background-size: 150%;
+  }
+
+  .event__card {
+    max-width: 1000px;
+  }
+
+     /*VISIT PAGE*/
+     .visit-page-only .hero__section {
+      background-size: cover;
+  }
+
 }
 
 /*----------------------------------------MIN 900PX----------*/
