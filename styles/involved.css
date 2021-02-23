@@ -23,9 +23,13 @@
 }
 
 /*-------------------------------------CONTACT FORM*/
+.contact-forms__div {
+  display: flex;
+  flex-direction: column;
+}
 
 .email-us form {
-  /* background-color: var(--light-background-color); */
+  background-color: var(--light-background-color);
   display: flex;
   flex-direction: column;
   margin: 0rem auto;
@@ -39,123 +43,61 @@
   font-size: 1rem;
   font-family: var(--paragraph-font), "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border: none;
+  outline: none;
   position: relative;
+  background-color: var(--light-font-color);
 }
 
 .email-us label {
-  margin: 2rem 0 -1rem 0;
+  margin: 1rem 0 0 0;
+  padding-bottom: 0.5rem;
   font-size: 1rem;
   font-family: var(--paragraph-font), "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 600;
   position: relative;
-  height: 55px;
 }
 
-.email-us__form label::after {
-    content: "";
-    width: 0%;
-    height: 5px;
-    left: 0;
-    bottom: 0px;
-    background: var(--link-color);
-    position: absolute;
-}
-
-input:focus + label::after {
-    width: 100%;
-}
-
-/* .email-us__form input::after
- .email-us__form select:after,
-.email-us__form textarea:after {
-  content: "I am a big bottom";
-  position: relative;
-  display: block;
-  left: 0px;
-  bottom: 10px;
-  width: 250px;
-  height: 250px;
-  background: var(--link-color);
-  color: black;
-  z-index: 100;
- transition: 0.3s all;
-} */
-
-/* .email-us input:hover::after,
-.email-us select:hover,
-.email-us textarea:hover {
-    width: 300px;
-} */
-
-/*
-
-.email-us input:hover::after,
-.email-us select:hover::after,
-.email-us textarea:hover::after {
-    width: 300px;
-}
-
-nav a::after,
-.expanding-image__div a h3::after,
-.skip-to__section a::after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  bottom: 15px;
-  width: 0px;
-  height: 5px;
-  background: var(--link-color);
-  transition: 0.3s all;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-*/
-
-/* 
 .email-us input:focus,
 .email-us select:focus,
 .email-us textarea:focus {
   outline: none;
-  border-bottom: var(--link-color) 2px solid;
-}
-
-.email-us input:hover,
-.email-us select:hover,
-.email-us textarea:hover {
-  outline: none;
-  border: var(--link-color) 2px solid;
+  border-bottom: var(--link-color) 5px solid;
 }
 
 .email-us textarea:focus {
   border: var(--link-color) 2px solid;
-} 
-
-.email-us input:valid,
-.email-us select:valid,
-.email-us textarea:valid {
-  outline: none;
-  border-bottom: var(--input-valid) 2px solid;
-}
- */
-
-/*
-.email-us input:invalid,
-.email-us select:invalid,
-.email-us textarea:invalid {
-  outline: none;
-  border: var(--main-cta-color) 2px solid;
 }
 
-.email-us input:empty:invalid,
-.email-us select:empty:invalid,
-.email-us textarea:empty:invalid {
+.email-us input:hover,
+label:hover + input,
+.email-us select:hover,
+label:hover + select,
+.email-us textarea:hover,
+label:hover + textarea {
   outline: none;
-  border: none;
+  border: var(--link-color) 2px solid;
 }
 
- */
+.email-us__form a {
+  width: 150px;
+}
+
+.email-us select {
+  appearance: none;
+  background: url("../images/down-arrow.svg") no-repeat;
+  background-position: right;
+}
+
+.email-us #number::-webkit-inner-spin-button,
+.email-us #number::-moz-focus-inner {
+  opacity: 1;
+}
+
+/*background: var(--input-background-color) url(../images/select-arrow.png)
+    no-repeat;
+  background-position: right;
+  font-size: 1em;
+  padding-right: 25px;*/
 
 /*-------------------------------------ENGAGE SECTION*/
 

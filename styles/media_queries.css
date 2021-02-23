@@ -457,6 +457,11 @@
   .visit-page-only h2 {
     text-align: center;
   }
+
+  /*INVOLVED PAGE*/
+  .involved-page-only .contact h2 {
+    text-align: center;
+  }
 }
 
 /*----------------------------------------MIN 810PX----------*/
@@ -577,8 +582,8 @@
   }
 }
 
-/*----------------------------------------MIN 900PX----------*/
-@media (min-width: 900px) {
+/*----------------------------------------MIN 950PX----------*/
+@media (min-width: 950px) {
   main {
     margin: 152px auto 0px auto;
   }
@@ -587,11 +592,15 @@
     padding: 1.5rem;
   }
 
-/*INVOLVED PAGE*/
-  .involved-page-only .email-us form {
-       max-width: 600px;
-}
+  /*INVOLVED PAGE*/
+  .involved-page-only .contact-forms__div {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
+  .involved-page-only form {
+    height: 725px;
+  }
 }
 
 /*----------------------------------------MIN 1250PX----------*/

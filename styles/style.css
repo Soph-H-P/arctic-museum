@@ -371,6 +371,10 @@ footer a {
   background: url("../images/chemistry.svg") center / 44px 44px no-repeat;
 }
 
+.check__icon {
+  background: url("../images/check.svg") center / 44px 44px no-repeat;
+}
+
 /*graphics*/
 .graphic {
   height: 200px;
@@ -379,8 +383,8 @@ footer a {
 /*ctas*/
 .cta-button {
   display: flex;
-  position: relative;
-  justify-content: end;
+
+  justify-content: space-between;
   width: 200px;
   height: 48px;
   border-radius: 50px;
@@ -398,9 +402,12 @@ footer a {
   box-shadow: 0 20px 10px -10px var(--dark-font-color);
 }
 
-.cta-button p {
-  position: absolute;
-  right: 4rem;
+.cta-button i {
+  align-self: flex-end;
+}
+
+.cta-button span {
+  margin: 1rem auto;
 }
 
 .non-dominant-cta {

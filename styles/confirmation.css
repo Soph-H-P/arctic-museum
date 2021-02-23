@@ -1,0 +1,17 @@
+@import "imports/variables.css";
+
+.confirmation__section {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 660px;
+}
+
+.check__icon {
+  background-size: cover;
+}
+
+.check__icon {
+  height: 200px;
+  width: 200px;
+}
