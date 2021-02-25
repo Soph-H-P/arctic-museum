@@ -13,7 +13,7 @@
     font-size: 2rem;
   }
 
-  .hero-text__div {
+  .hero-text__div:not(.index-hero__section .hero-text__div) {
     width: 75%;
   }
 
@@ -44,6 +44,11 @@
 
 /*----------------------------------------MIN 455PX----------*/
 @media (min-width: 455px) {
+  /*INDEX HOME PAGE*/
+  .index-hero__section .hero-text__div {
+    width: 90%;
+  }
+
   /*EVENTS PAGE*/
   .events-page-only .hero__section {
     background: url("../images/special-events.jpg") 0% 20% no-repeat;
@@ -239,16 +244,21 @@
 
   /*hero sections*/
 
-  .index-hero__section {
-    min-height: 300px;
-    background-size: 800px;
-  }
-
   .hero-text__div {
     width: 75%;
   }
 
   /*INDEX HOME PAGE*/
+
+  .index-hero__section {
+    min-height: 300px;
+    background-size: 800px;
+  }
+
+  .index-hero__section .hero-text__div {
+    width: 80%;
+  }
+
   .exhibition-links__div {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
@@ -279,7 +289,6 @@
     max-width: 500px;
     margin: 0 auto;
   }
-
 
   /*EXHIBITIONS PAGE*/
   .exhibitions__section p {
@@ -474,15 +483,16 @@
     width: 50%;
   }
 
-  .index-hero__section {
-    min-height: 400px;
-  }
-
   /*INDEX HOME PAGE*/
   .index-hero__section {
     background-image: url("../images/building-hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 400px;
+  }
+
+  .index-hero__section .hero-text__div {
+    width: 60%;
   }
 
   .explore-links__div img {
@@ -604,10 +614,10 @@
   }
 
   .to-do__section,
-.resources__section,
-.research__section {
-  max-width: 1000px;
-}
+  .resources__section,
+  .research__section {
+    max-width: 1000px;
+  }
 
   .explore-card__wrapper {
     margin-left: 10px;
@@ -618,7 +628,7 @@
     min-width: 3rem;
     width: max-content;
     top: 168px;
-    margin-top: 1rem; 
+    margin-top: 1rem;
   }
 
   .skip-to__section ul {

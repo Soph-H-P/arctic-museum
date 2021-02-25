@@ -9,7 +9,7 @@
 /*-------------------------------------HERO SECTION*/
 .hero__section {
   display: flex;
-  background: url("../images/building_small.jpg") top right/ 600px no-repeat;
+  background: url("../images/building_small.jpg") top right/ 700px no-repeat;
   justify-content: flex-end;
   color: var(--dark-font-color);
 }

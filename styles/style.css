@@ -418,7 +418,10 @@ footer a {
   background-color: var(--light-font-color);
   color: var(--main-cta-color);
   border: solid 2px var(--main-cta-color);
+  height: 3.1rem;
 }
+
+
 
 /*-----------------------------------------------HERO SECTION*/
 
@@ -461,5 +464,3 @@ footer a {
   font-weight: 600;
   margin: 10px;
 }
-
-
