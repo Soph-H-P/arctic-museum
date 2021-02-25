@@ -3,7 +3,7 @@
 /*-------------------------------------HERO SECTION*/
 .hero__section {
   justify-content: end;
-  background: url("../images/ozone-balloon-hero.jpg") no-repeat;
+  background: var(--dark-font-color) url("../images/ozone-balloon-hero.jpg") no-repeat;
   background-size: cover;
   background-position-x: right;
 }

@@ -7,7 +7,7 @@ main section {
 /*-------------------------------------------HERO SECTION*/
 .hero__section {
   color: var(--dark-font-color);
-  background: url("../images/sea_eagle-hero-small.jpg") 35% 100% no-repeat;
+  background: var(--light-font-color) url("../images/sea_eagle-hero-small.jpg") 35% 100% no-repeat;
   background-size: cover;
 }
 

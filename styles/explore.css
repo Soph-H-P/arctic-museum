@@ -57,7 +57,7 @@ main h2 {
 /*---------------------------------HERO SECTOION*/
 
 .hero__section {
-  background: url("../images/plasma_tube-hero.jpg") 20% 100% no-repeat;
+  background: var(--dark-font-color) url("../images/plasma_tube-hero.jpg") 20% 100% no-repeat;
 }
 
 .explore-hero__section {

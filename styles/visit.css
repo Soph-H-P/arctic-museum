@@ -12,7 +12,7 @@
 /*-----------------------------------------HERO SECTION*/
 .hero__section {
   color: var(--dark-font-color);
-  background: url("../images/tromso-small.jpg") 0% 0% no-repeat;
+  background: var(--light-font-color) url("../images/tromso-small.jpg") 0% 0% no-repeat;
   background-size: 170%;
 }
 

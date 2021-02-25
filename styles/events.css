@@ -8,7 +8,7 @@ main h3 {
 
 /*---------------------------------HERO SECTION*/
 .hero__section {
-  background: url("../images/special-events.jpg") 0% 0% no-repeat;
+  background: var(--dark-font-color) url("../images/special-events.jpg") 0% 0% no-repeat;
   background-size: 200%;
 }
 
