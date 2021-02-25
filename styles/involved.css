@@ -51,6 +51,25 @@
   background-color: var(--light-font-color);
 }
 
+.contact-forms__div input:user-invalid,
+.contact-forms__div select:user-invalid,
+.contact-forms__div textarea:user-invalid {
+  outline: auto;
+}
+
+.contact-forms__div input:not(:placeholder-shown):invalid,
+.contact-forms__div select:not(:placeholder-shown):invalid,
+.contact-forms__div textarea:not(:placeholder-shown):invalid {
+  outline: var(--main-cta-color) solid 2px;
+  background-color: #f5e1e1;
+}
+
+.contact-forms__div input:required:valid,
+.contact-forms__div select:required:valid,
+.contact-forms__div textarea:required:valid {
+  outline: none;
+}
+
 .contact-forms__div label {
   margin: 1rem 0 0 0;
   padding-bottom: 0.5rem;

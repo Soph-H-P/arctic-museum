@@ -93,21 +93,20 @@
             <h2>Book Tickets</h2>
             <form class="contact__form" action="">
               <label for="booking-name">Name</label>
-              <input type="text" id="booking-name" required />
+              <input placeholder="Sophie" type="text" id="booking-name" required />
               <label for="booking-email">Email</label>
-              <input type="email" id="booking-email" required />
+              <input placeholder="example@something.com" type="email" id="booking-email" required />
               <label for="event">Choose Event</label>
               <select id="event" required>
-                <option value="" disabled selected>Select event...</option>
                 <option value="book-tickets-aeronautics">Book tickets for Aeronautics lecture</option>
                 <option value="book-tickets-night-in">Book tickets for Night in the Museum</option>
                 <option value="book-tour">Book a tour</option>
                 <option value="book-group-tour">Book a group tour (6 or more people)</option>
               </select>
               <label for="date">Date - tours only</label>
-              <input type="date" id="date" min="2021-03-01" max="2021-06-01" />
-              <label for="number">Number of people</label>
-              <input type="number" id="number" min="1" max="20" required />
+              <input placeholder="mm/dd/yyyy" type="date" id="date" min="2021-03-01" max="2021-06-01" />
+              <label for="number">Number of people (max 20)</label>
+              <input value="1" type="number" id="number" min="1" max="20" required />
               <label for="special-requirements">Any special requirements?</label>
               <textarea name="special-requirements" id="special-requirements" cols="30" rows="3"></textarea>
               <a href="confirmation.html" class="cta-button">
@@ -120,12 +119,11 @@
             <h2>Email Us</h2>
             <form class="contact__form" action="">
               <label for="name">Name</label>
-              <input type="text" id="name" required />
+              <input placeholder="Sophie" type="text" id="name" required />
               <label for="email">Email</label>
-              <input type="email" id="email" required />
+              <input placeholder="example@something.com" type="email" id="email" required />
               <label for="email-subject">Choose email subject</label>
               <select id="subject" required>
-                <option value="" disabled selected>Select subject...</option>
                 <option value="general">General enquiry</option>
                 <option value="accessibility">Accessibility concerns</option>
                 <option value="feedback">Feedback</option>
@@ -135,7 +133,7 @@
                 <option value="other">Other</option>
               </select>
               <label for="message">Write your message here</label>
-              <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+              <textarea placeholder="I would like to know more about..." name="message" id="message" cols="30" rows="10" required></textarea>
               <a href="confirmation.html" class="cta-button">
                 <span>Send</span>
                 <i class="contact__icon icon"></i>
