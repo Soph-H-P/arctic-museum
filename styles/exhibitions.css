@@ -51,6 +51,11 @@ main section {
   object-fit: cover;
 }
 
+#sea-eagle__image {
+  object-fit: none;
+  object-position: top;
+}
+
 .exhibitions__section h2 {
   grid-area: heading;
 }

@@ -13,7 +13,7 @@
     font-size: 2rem;
   }
 
-  .hero-text__div:not(.index-hero__section .hero-text__div) {
+  .hero-text__div{
     width: 75%;
   }
 
@@ -24,6 +24,12 @@
   .circular-image img {
     height: 220px;
     width: 220px;
+  }
+
+
+  /*INDEX HOME PAGE*/
+  .index-hero__section .hero-text__div {
+    width: 100%;
   }
 
   /*EXPLORE PAGE*/
