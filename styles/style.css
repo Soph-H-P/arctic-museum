@@ -415,10 +415,10 @@ footer a {
 }
 
 .non-dominant-cta {
-  background-color: var(--light-font-color);
+  background-color: #f5e1e1;
   color: var(--main-cta-color);
   border: solid 2px var(--main-cta-color);
-  height: 3.1rem;
+  height: 3.15rem;
 }
 
 
