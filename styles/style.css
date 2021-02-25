@@ -6,8 +6,7 @@
 }
 
 html {
-  scroll-margin-top: 80px;
-  -webkit-scroll-snap-margin: 80px;
+  scroll-padding-top: 80px;
 }
 
 body {
