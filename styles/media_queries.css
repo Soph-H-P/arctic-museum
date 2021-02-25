@@ -274,13 +274,12 @@
   }
 
   .skip-to__section ul {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
+    max-width: 500px;
+    margin: 0 auto;
   }
 
-  .skip-to__section li a {
-    text-decoration: none;
-  }
 
   /*EXHIBITIONS PAGE*/
   .exhibitions__section p {
@@ -600,6 +599,16 @@
   }
 
   /*EXPLORE PAGE*/
+  .explore__html {
+    scroll-padding-top: 142px;
+  }
+
+  .to-do__section,
+.resources__section,
+.research__section {
+  max-width: 1000px;
+}
+
   .explore-card__wrapper {
     margin-left: 10px;
   }
@@ -608,15 +617,15 @@
     float: right;
     min-width: 3rem;
     width: max-content;
-    background: none;
-    box-shadow: none;
+    top: 168px;
+    margin-top: 1rem; 
   }
 
   .skip-to__section ul {
     flex-direction: column;
     width: max-content;
     font-size: 1.5rem;
-    background-color: var(--light-background-color);
+    background-color: var(--light-font-color);
   }
 
   .skip-to__section li {

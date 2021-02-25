@@ -12,6 +12,10 @@ footer {
   margin-top: 10rem;
 }
 
+main h2 {
+  padding-top: 2rem;
+}
+
 /*---------------------------------SKIP TO MENU SECTION*/
 .skip-to__section {
   position: sticky;
@@ -46,6 +50,10 @@ footer {
   text-decoration: underline;
 }
 
+.skip-to__section li a:hover {
+  text-decoration: none;
+}
+
 /*---------------------------------HERO SECTOION*/
 
 .hero__section {
@@ -61,7 +69,11 @@ footer {
 }
 
 /*---------------------------------EXPLORE SECTIONS*/
-.to-do-text__div {
+
+.to-do__section,
+.resources__section,
+.research__section,
+ .to-do-text__div {
   text-align: center;
 }
 
