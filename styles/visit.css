@@ -1,8 +1,6 @@
 @import "imports/variables.css";
 
-.location,
-.admission,
-.opening-hours,
+
 .food-drink,
 .shop,
 .accessibility__section {
@@ -28,6 +26,12 @@
 .information__section {
   display: grid;
   grid-template-columns: 1fr;
+  margin: 1rem;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
 }
 
 .location p {
@@ -35,19 +39,18 @@
 }
 
 .information__section table {
-  align-self: center;
+  margin: 0 auto;
 }
 
 .information__section td {
-  padding: 0.8rem;
+  padding: 0.5rem;
 }
 
 /*map*/
 iframe {
   width: 90%;
   height: 300px;
-  align-self: center;
-  margin-top: 1rem;
+  margin: 1rem auto;
 }
 
 /*FOOD AND DRINK, SHOP AND ACCESSIBILITY SECTIONS*/

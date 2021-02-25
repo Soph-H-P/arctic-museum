@@ -3,12 +3,15 @@
 /*-------------------------------------HERO SECTION*/
 .hero__section {
   justify-content: end;
-  background: url("../images/ozone-balloon-hero.jpg") 50% 0% no-repeat;
+  background: url("../images/ozone-balloon-hero.jpg") no-repeat;
   background-size: cover;
+  background-position-x: right;
 }
 
 .hero-text__div {
   padding-left: 1rem;
+  background-color: #0000005e;
+  box-shadow: 0px -60px 30px 40px #0000005e;
 }
 
 .get-involved__section div {

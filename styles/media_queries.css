@@ -13,7 +13,7 @@
     font-size: 2rem;
   }
 
-  .hero-text__div{
+  .hero-text__div {
     width: 75%;
   }
 
@@ -25,7 +25,6 @@
     height: 220px;
     width: 220px;
   }
-
 
   /*INDEX HOME PAGE*/
   .index-hero__section .hero-text__div {
@@ -134,8 +133,7 @@
 
   /*VISIT PAGE*/
   .visit-page-only .hero__section {
-    height: 400px;
-    background: url("../images/tromso-small.jpg") 0% 30% no-repeat;
+    background: url("../images/tromso-small.jpg") 0% no-repeat;
     background-size: 190%;
   }
 
@@ -366,10 +364,16 @@
   }
 
   .admission {
+    margin: 2rem;
     grid-area: admission;
   }
 
   /*INVOLVED PAGE*/
+
+  .involved-page-only .hero__section .hero-text__div {
+    width: 65%;
+  }
+
   .get-involved__section div {
     display: grid;
     grid-template: auto auto auto auto / 1fr 3fr;
@@ -407,7 +411,7 @@
 
   /*hero sections*/
   .hero__section {
-    min-height: 350px;
+    min-height: 300px;
   }
 
   .hero-text__div {
@@ -463,6 +467,13 @@
   }
 
   /*INVOLVED PAGE*/
+  .involved-page-only .hero__section {
+    justify-content: end;
+    background: url("../images/ozone-balloon-hero.jpg") no-repeat;
+    background-size: cover;
+    background-position-x: right;
+  }
+
   .involved-page-only .contact h2 {
     text-align: center;
   }
@@ -554,6 +565,10 @@
     background-size: cover;
   }
 
+  .visit-page-only .hero__section p {
+    max-width: 400px;
+  }
+
   .information__section {
     flex-direction: grid;
     grid-template-columns: 1fr 1fr;
@@ -567,7 +582,7 @@
   }
 
   .location iframe {
-    height: 500px;
+    height: 350px;
   }
 
   .food-drink .images__wrapper {
