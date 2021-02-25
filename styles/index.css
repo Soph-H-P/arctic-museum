@@ -1,5 +1,11 @@
 @import "imports/variables.css";
 
+.text__div {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
 /*-------------------------------------HERO SECTION*/
 .hero__section {
   display: flex;
@@ -12,15 +18,7 @@
   font-size: 1.5rem;
 }
 
-/*-------------------------------------TEXT DIV SECTIONS*/
-
-.text__div {
-  max-width: 50rem;
-  margin: 0 auto;
-  padding: 10px 20px;
-}
-
-/*-------------------------------------LINKS AREAS*/
+/*-------------------------------------QUICK LINKS SECTIONS*/
 .explore__section,
 .exhibition__section,
 .this-month__section,
@@ -71,8 +69,6 @@
   transition-duration: 0.2s;
 }
 
-
-
 /*-------------------------------------THIS MONTH SECTION*/
 .this-month__section {
   color: var(--light-font-color);
@@ -84,13 +80,13 @@
   display: none;
   align-self: center;
   width: 100%;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .this-month-text__div {
   justify-self: end;
   align-self: center;
-  margin: 10px;
+  margin: 1rem;
 }
 
 .this-month__section p {

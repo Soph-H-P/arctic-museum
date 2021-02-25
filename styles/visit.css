@@ -1,11 +1,5 @@
 @import "imports/variables.css";
 
-.hero__section {
-  color: var(--dark-font-color);
-  background: url("../images/tromso-small.jpg") 0% 0% no-repeat;
-  background-size: 170%;
-}
-
 .location,
 .admission,
 .opening-hours,
@@ -17,7 +11,18 @@
   margin: 3rem 1rem;
 }
 
-/*INFORMATION SECTION*/
+/*-----------------------------------------HERO SECTION*/
+.hero__section {
+  color: var(--dark-font-color);
+  background: url("../images/tromso-small.jpg") 0% 0% no-repeat;
+  background-size: 170%;
+}
+
+.hero-graphic {
+  background: url("../images/planning.svg") no-repeat;
+}
+
+/*---------------------------------INFORMATION SECTION*/
 
 /*LOCATION*/
 .information__section {
@@ -37,13 +42,15 @@
   padding: 0.8rem;
 }
 
-/*MAP*/
+/*map*/
 iframe {
   width: 90%;
   height: 300px;
   align-self: center;
   margin-top: 1rem;
 }
+
+/*FOOD AND DRINK, SHOP AND ACCESSIBILITY SECTIONS*/
 
 .food-drink .images__wrapper {
   display: flex;

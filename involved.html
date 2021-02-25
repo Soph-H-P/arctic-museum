@@ -25,7 +25,6 @@
           </div>
         </div>
       </a>
-
       <div class="nav__wrapper">
         <input type="checkbox" id="hamburger-menu__checkbox" />
         <label class="menu-checkbox__label" for="hamburger-menu__checkbox">
@@ -35,7 +34,6 @@
             <div class="bluebar-bottom"></div>
           </div>
         </label>
-
         <nav>
           <form class="search__wrapper">
             <input type="checkbox" id="search-box__checkbox" />
@@ -66,14 +64,14 @@
         </div>
       </section>
       <section class="get-involved__section">
-        <div class="support">
+        <div class="support" id="donate">
           <img class="graphic" src="images/donate.svg" alt="graphic of hand giving money" />
           <h2>Support</h2>
           <p>Donations are very welcome and are an important way we keep this museum open and accessible to the whole community.</p>
           <p>You can also support us by donating items of interest to the museum’s collections. If you have some item or collection that you think others would enjoy, please let us know by contacting our Collections Department and they will be able to assist you.</p>
           <p>We accept donations via Vipps just search “ASM Tromsø” - Thank you for your support</p>
         </div>
-        <div class="volunteer">
+        <div class="volunteer" id="volenteering">
           <img class="graphic" src="images/volunteer.svg" alt="graphic of hands giving heart" />
           <h2>volunteer</h2>
           <p>
@@ -91,9 +89,9 @@
       </section>
       <section class="contact">
         <div class="contact-forms__div">
-          <div class="email-us book-tickets__div" id="tickets">
+          <div class="book-tickets__div" id="tickets">
             <h2>Book Tickets</h2>
-            <form class="email-us__form" action="">
+            <form class="contact__form" action="">
               <label for="booking-name">Name</label>
               <input type="text" id="booking-name" required />
               <label for="booking-email">Email</label>
@@ -118,10 +116,9 @@
               </a>
             </form>
           </div>
-
-          <div class="email-us">
+          <div class="email-us" id="email-us">
             <h2>Email Us</h2>
-            <form class="email-us__form" action="">
+            <form class="contact__form" action="">
               <label for="name">Name</label>
               <input type="text" id="name" required />
               <label for="email">Email</label>
@@ -134,6 +131,7 @@
                 <option value="feedback">Feedback</option>
                 <option value="stars-club">Young stars club</option>
                 <option value="summer-school">Summer school</option>
+                <option value="summer-school">Internships</option>
                 <option value="other">Other</option>
               </select>
               <label for="message">Write your message here</label>
@@ -145,13 +143,12 @@
             </form>
           </div>
         </div>
-
         <div class="engage">
           <h2>Engage With Us</h2>
           <div class="image__wrapper">
-            <img src="images/instagram.svg" alt="instagram logo" />
-            <img src="images/facebook.svg" alt="facebook logo" />
-            <img src="images/twitter.svg" alt="twitter logo" />
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg" alt="instagram logo" /></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="facebook logo" /></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.svg" alt="twitter logo" /></a>
           </div>
         </div>
       </section>
@@ -217,12 +214,12 @@
       <section class="quick-links__section">
         <h3>Quick Links</h3>
         <div class="quick-links__wrapper">
-          <a href="involved.html" class="quick-link__footer">Contact</a>
-          <a href="visit.html" class="quick-link__footer">Accessibility</a>
-          <a href="involved.html" class="quick-link__footer">Volunteering</a>
-          <a href="involved.html" class="quick-link__footer">Donate</a>
+          <a href="involved.html#email-us" class="quick-link__footer">Contact</a>
+          <a href="visit.html#accessibility" class="quick-link__footer">Accessibility</a>
+          <a href="#volenteering" class="quick-link__footer">Volunteering</a>
+          <a href="#donate" class="quick-link__footer">Donate</a>
           <a href="events.html" class="quick-link__footer">Special Events</a>
-          <a href="visit.html" class="quick-link__footer">Find Us</a>
+          <a href="visit.html#location" class="quick-link__footer">Find Us</a>
         </div>
       </section>
     </footer>

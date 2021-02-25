@@ -1,7 +1,10 @@
 @import "imports/variables.css";
 
-/*HERO SECTION*/
+main section {
+  margin-bottom: 3rem;
+}
 
+/*-------------------------------------------HERO SECTION*/
 .hero__section {
   color: var(--dark-font-color);
   background: url("../images/sea_eagle-hero-small.jpg") 35% 100% no-repeat;
@@ -9,25 +12,33 @@
 }
 
 .hero__section p {
-  padding-right: 2px;
+  padding-right: 0.3rem;
 }
 
-main section {
-  margin-bottom: 3rem;
+.hero-graphic {
+  background: url("../images/microscope-graphic.svg") no-repeat;
 }
 
-/*EXHIBITION SECTIONS*/
+/*-------------------------------------------EXHIBITION SECTIONS*/
 .exhibitions__section {
   display: grid;
   grid-template-columns: 1fr;
+  justify-items: center;
+  grid-template-areas:
+    "heading"
+    "image"
+    "paragraph";
 }
 
 .exhibition-text__div {
   margin: 1rem;
+  grid-area: paragraph;
 }
 
 .exhibition-img__wrapper {
-  width: 100%;
+  grid-area: image;
+  justify-self: start;
+  width: 80%;
   height: 100%;
   overflow: hidden;
   justify-self: center;
@@ -40,31 +51,30 @@ main section {
   object-fit: cover;
 }
 
-.image-with-label {
-  position: relative;
+.exhibitions__section h2 {
+  grid-area: heading;
 }
 
 .subject__label {
+  grid-area: image;
+  z-index: 90;
+  justify-self: end;
   display: flex;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  justify-content: end;
-  width: 160px;
-  height: 48px;
-  border-radius: 0 50px 50px 0;
+  justify-content: space-between;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0 4rem 4rem 0;
   background-color: var(--light-font-color);
   color: var(--dark-font-color);
   text-transform: uppercase;
   font-weight: 600;
   align-items: center;
-  padding: 2px;
+  padding: 0.1rem;
   border: solid 2px var(--link-color);
 }
 
 .subject__label p {
-  position: absolute;
-  right: 3.5rem;
+  margin: 1rem auto;
 }
 
 .come-see__section p {
@@ -73,30 +83,114 @@ main section {
   font-weight: 600;
 }
 
-/*PLANET DIVIDER*/
+/*-------------------------------------------DECORATIVE DIVIDERS*/
+
+/*PLANETS*/
 
 .planet__decoration__div {
   display: none;
   position: relative;
   width: 100%;
   justify-content: space-around;
-  margin: -30px auto -60px auto;
+  align-items: center;
+  margin: -2rem auto -3.75rem auto;
 }
 
 .sun {
   position: absolute;
   left: -1700px;
   top: -780px;
+  height: 1717px;
+  width: 1717px;
+  background: url("../images/sun.svg") no-repeat;
+  background-size: cover;
 }
 
-/*ARCTIC FOXES DECORATION*/
+.mercury {
+  height: 8px;
+  width: 8px;
+  background: url("../images/Mercury.svg") no-repeat;
+  background-size: cover;
+}
+
+.venus {
+  height: 16px;
+  width: 16px;
+  background: url("../images/Venus.svg") no-repeat;
+  background-size: cover;
+}
+
+.earth {
+  height: 16px;
+  width: 16px;
+  background: url("../images/Earth.svg") no-repeat;
+  background-size: cover;
+}
+
+.mars {
+  height: 8px;
+  width: 8px;
+  background: url("../images/Mars.svg") no-repeat;
+  background-size: cover;
+}
+
+.jupiter {
+  height: 116px;
+  width: 116px;
+  background: url("../images/Jupiter.svg") no-repeat;
+  background-size: cover;
+}
+
+.saturn {
+  height: 178.15px;
+  width: 144.133px;
+  background: url("../images/Saturn.svg") no-repeat;
+  background-size: cover;
+}
+.uranus {
+  height: 42px;
+  width: 42px;
+  background: url("../images/Uranus.svg") no-repeat;
+  background-size: cover;
+}
+
+.neptune {
+  height: 38px;
+  width: 38px;
+  background: url("../images/Neptune.svg") no-repeat;
+  background-size: cover;
+}
+
+/*ARCTIC FOXES*/
 
 .arctic-foxes__div {
   display: none;
   width: 100%;
   justify-content: space-around;
+  align-items: flex-end;
 }
 
 .not-displayed {
   display: none;
+}
+
+.jumping-fox,
+.standing-fox,
+.sleeping-fox {
+  height: 100.917px;
+}
+
+.jumping-fox {
+  width: 128.7px;
+  background: url("../images/jumping-fox.svg") no-repeat;
+}
+
+.standing-fox {
+  width: 130.167px;
+  background: url("../images/standing-fox.svg") no-repeat;
+}
+
+.sleeping-fox {
+  width: 110.333px;
+  background: url("../images/sleeping-fox.svg") bottom no-repeat;
 }

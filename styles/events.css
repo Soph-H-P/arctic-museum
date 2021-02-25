@@ -1,11 +1,22 @@
 @import "imports/variables.css";
 
-/*HERO SECTION*/
+main h2,
+main h3 {
+  text-align: left;
+  margin: 1rem 0;
+}
 
+/*---------------------------------HERO SECTION*/
 .hero__section {
   background: url("../images/special-events.jpg") 0% 0% no-repeat;
   background-size: 200%;
 }
+
+.hero-graphic {
+  background: url("../images/talks.svg") no-repeat;
+}
+
+/*---------------------------------EVENTS SECTIONS*/
 
 .event__card {
   padding: 2rem;
@@ -13,12 +24,6 @@
   background-color: var(--light-background-color);
   display: flex;
   flex-direction: column;
-}
-
-main h2,
-main h3 {
-  text-align: left;
-  margin: 1rem 0;
 }
 
 .event__card .circular-image {

@@ -4,51 +4,49 @@ header {
   box-shadow: none;
 }
 
-section:not(.skip-to__section, .hero__section, footer section) {
-  padding-top: 8rem;
-}
-
-section:not(.skip-to__section, footer section) {
-  margin-bottom: -7rem;
+html {
+  scroll-padding-top: 146px;
 }
 
 footer {
   margin-top: 10rem;
 }
 
-/*----------------SKIP TO SECTION-----------------*/
+/*---------------------------------SKIP TO MENU SECTION*/
 .skip-to__section {
   position: sticky;
-  position: -webkit-sticky;
   top: 80px;
-  margin: 7rem 0 -9rem 0;
   z-index: 100;
   width: 100%;
   min-width: 320px;
   background-color: var(--light-font-color);
-  box-shadow: 0px 2px 10px 0px var(--dark-font-color);
+  box-shadow: 0px 2px 5px 0px var(--shaddow-color);
 }
 
 .skip-to__section ul {
   display: flex;
   justify-content: space-around;
   padding: 10px;
+  margin: 0;
 }
 
 .skip-to__section li {
   position: relative;
   display: inline-block;
   text-align: center;
-  margin: 2px;
+  padding: 3px;
+  margin: 0 2px;
   font-weight: 600;
-  background-color: var(--light-background-color);
+  background-color: var(--light-font-color);
 }
 
 .skip-to__section li a {
   padding: 5px;
+  color: var(--link-color);
+  text-decoration: underline;
 }
 
-/*----------------HERO SECTOION-----------------*/
+/*---------------------------------HERO SECTOION*/
 
 .hero__section {
   background: url("../images/plasma_tube-hero.jpg") 20% 100% no-repeat;
@@ -58,7 +56,11 @@ footer {
   padding-top: 1rem;
 }
 
-/*EXPLORE SECTIONS*/
+.hero-graphic {
+  background: url("../images/exploring.svg") no-repeat;
+}
+
+/*---------------------------------EXPLORE SECTIONS*/
 .to-do-text__div {
   text-align: center;
 }
@@ -84,9 +86,8 @@ footer {
 }
 
 .explore-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-auto-rows: 1fr 1fr auto;
   background-color: var(--light-background-color);
   padding: 2rem;
   margin: 1rem auto;
@@ -94,4 +95,38 @@ footer {
 
 .explore-card p {
   max-width: 250px;
+  align-self: start;
+}
+
+/*SHOWTIMES CHECKBOX*/
+
+.showtimes__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.showtimes-table__wrapper {
+  order: -1;
+}
+
+.showtimes__wrapper table {
+  margin: 1rem auto;
+}
+
+#showtimes__checkbox {
+  display: none;
+  background: red;
+}
+
+.showtimes__wrapper label {
+  cursor: pointer;
+}
+
+#showtimes__checkbox ~ div {
+  display: none;
+}
+
+#showtimes__checkbox:checked ~ div {
+  display: inline-block;
 }

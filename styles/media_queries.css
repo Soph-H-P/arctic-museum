@@ -2,9 +2,6 @@
 /*----------------------------------------MIN 370PX----------*/
 @media (min-width: 370px) {
   /*GLOBAL*/
-  * {
-    background-color: rgba(175, 175, 179, 0.253);
-  }
 
   /*FOOTER*/
   .square-insta-images__div {
@@ -62,10 +59,13 @@
 
 /*----------------------------------------MIN 570PX----------*/
 @media (min-width: 570px) {
-  /*INDEX HOME PAGE*/
-  * {
-    background-color: rgba(232, 235, 95, 0.253);
+  /*GLOBAL STYLES*/
+  .hero-graphic {
+    display: block;
+    background-size: contain;
   }
+
+  /*INDEX HOME PAGE*/
 
   .explore-links__div,
   .amenities-links__div {
@@ -91,10 +91,6 @@
 
   .explore-page-only .hero__section {
     background: url("../images/plasma_tube-hero.jpg") 30% 10% no-repeat;
-  }
-
-  .hero-image-title__wrapper img {
-    display: block;
   }
 
   /*EXHIBITIONS PAGE*/
@@ -139,20 +135,26 @@
     align-items: center;
     margin: 0 auto;
   }
+
+  /*INVOLVED PAGE*/
+
+  .contact-forms__div form {
+    width: 450px;
+  }
 }
 
 /*----------------------------------------MIN 610PX----------*/
 @media (min-width: 610px) {
   /*GLOBAL STYLES*/
-  * {
-    background-color: rgba(201, 155, 222, 0.253);
+
+  html {
+    scroll-padding-top: 152px;
   }
 
   main {
     margin: 142px 0px 0px 0px;
   }
 
-  /*NAV BAR*/
   h1 {
     font-size: 2rem;
   }
@@ -166,6 +168,7 @@
     font-weight: 800;
   }
 
+  /*navigation*/
   .nav__wrapper  {
     display: inline;
   }
@@ -206,8 +209,8 @@
 
   .search__wrapper {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 1rem;
+    right: 1rem;
     margin: 0;
   }
 
@@ -216,7 +219,7 @@
     max-width: 150px;
   }
 
-  /*FOOTER*/
+  /*footer*/
   footer {
     flex-direction: row;
   }
@@ -234,7 +237,7 @@
     margin: 10px 0px;
   }
 
-  /*HERO SECTION*/
+  /*hero sections*/
 
   .index-hero__section {
     min-height: 300px;
@@ -246,18 +249,14 @@
   }
 
   /*INDEX HOME PAGE*/
-
   .exhibition-links__div {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
   }
-  /*EXPLORE PAGE*/
-  .explore-page-only section:not(.skip-to__section, .explore-hero__section) {
-    padding-top: 11rem;
-  }
 
-  .explore-page-only section:not(.skip-to__section) {
-    margin-bottom: -10rem;
+  /*EXPLORE PAGE*/
+  .explore__html {
+    scroll-padding-top: 200px;
   }
 
   .explore-card__wrapper {
@@ -272,7 +271,6 @@
 
   .skip-to__section {
     top: 142px;
-    margin: 10.5rem 0 -10.5rem 0;
   }
 
   .skip-to__section ul {
@@ -337,7 +335,6 @@
     background-size: 200%;
   }
 
-  /*VISIT PAGE*/
   .information__section {
     flex-direction: grid;
     grid-template-columns: 1fr 1fr;
@@ -358,6 +355,7 @@
     grid-area: admission;
   }
 
+  /*INVOLVED PAGE*/
   .get-involved__section div {
     display: grid;
     grid-template: auto auto auto auto / 1fr 3fr;
@@ -379,12 +377,11 @@
 /*----------------------------------------MIN 710PX----------*/
 @media (min-width: 710px) {
   /*GLOBAL STYLES*/
-  * {
-    background-color: rgba(235, 159, 198, 0.253);
-  }
+
   .opening-hours__section table {
     border-spacing: 2px 15px;
   }
+
   .square-insta-images__div {
     grid-template: 1fr 1fr / 1fr 1fr 1fr;
   }
@@ -394,8 +391,7 @@
     margin: 5px 0px;
   }
 
-  /*HERO SECTION*/
-
+  /*hero sections*/
   .hero__section {
     min-height: 350px;
   }
@@ -419,11 +415,6 @@
       "paragraph image";
   }
 
-  main h2 {
-    text-align: left;
-    margin: 1rem;
-  }
-
   .exhibition-img__wrapper {
     width: 85%;
     height: 100%;
@@ -431,11 +422,8 @@
 
   .exhibitions__section h2 {
     grid-area: header;
-  }
-
-  .image-with-label {
-    grid-area: image;
-    align-self: center;
+    justify-self: flex-start;
+    margin: 1rem 2rem;
   }
 
   .exhibition-text__div {
@@ -447,6 +435,8 @@
   .not-displayed {
     display: flex;
   }
+
+  /*EVENTS PAGE*/
 
   .events-page-only .hero__section {
     background: url("../images/special-events.jpg") 0% 15% no-repeat;
@@ -467,19 +457,20 @@
 /*----------------------------------------MIN 810PX----------*/
 @media (min-width: 810px) {
   /*GLOBAL STYLES*/
-  * {
-    background-color: rgba(153, 199, 184, 0.253);
+
+  html {
+    scroll-padding-top: 162px;
   }
 
   main {
     margin: 152px 0px 0px 0px;
   }
-  /*NAV BAR*/
+  /*navigation*/
   nav a {
     font-size: 1.5rem;
   }
 
-  /*HERO SECTION*/
+  /*hero sections*/
   .hero-text__div {
     width: 50%;
   }
@@ -512,12 +503,8 @@
 
   /*EXPLORE PAGE*/
 
-  .explore-page-only section:not(.skip-to__section, .explore-hero__section) {
-    padding-top: 12rem;
-  }
-
-  .explore-page-only section:not(.skip-to__section) {
-    margin-bottom: -9rem;
+  .explore__html {
+    scroll-padding-top: 220px;
   }
 
   .explore-card__wrapper {
@@ -530,7 +517,6 @@
 
   .skip-to__section {
     top: 152px;
-    margin: 10.5rem 0 -10.5rem 0;
   }
 
   /*EXHIBITIONS PAGE*/
@@ -584,10 +570,12 @@
 
 /*----------------------------------------MIN 950PX----------*/
 @media (min-width: 950px) {
+  /*GLOBAL STYLES*/
   main {
     margin: 152px auto 0px auto;
   }
 
+  /*EXPLORE PAGE*/
   .explore-card {
     padding: 1.5rem;
   }
@@ -606,23 +594,21 @@
 /*----------------------------------------MIN 1250PX----------*/
 
 @media (min-width: 1250px) {
+  /*GLOBAL STYLES*/
   header {
     box-shadow: 0 2px 10px 0px var(--dark-font-color);
   }
 
+  /*EXPLORE PAGE*/
   .explore-card__wrapper {
     margin-left: 10px;
   }
 
   .skip-to__section {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 170px;
     float: right;
     min-width: 3rem;
     width: max-content;
     background: none;
-    margin-bottom: 1rem;
     box-shadow: none;
   }
 
@@ -630,7 +616,6 @@
     flex-direction: column;
     width: max-content;
     font-size: 1.5rem;
-    /* margin-top: 15rem; */
     background-color: var(--light-background-color);
   }
 

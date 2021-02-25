@@ -25,7 +25,6 @@
           </div>
         </div>
       </a>
-
       <div class="nav__wrapper">
         <input type="checkbox" id="hamburger-menu__checkbox" />
         <label class="menu-checkbox__label" for="hamburger-menu__checkbox">
@@ -35,7 +34,6 @@
             <div class="bluebar-bottom"></div>
           </div>
         </label>
-
         <nav>
           <form class="search__wrapper">
             <input type="checkbox" id="search-box__checkbox" />
@@ -60,14 +58,14 @@
       <section class="hero__section">
         <div class="hero-text__div">
           <div class="hero-image-title__wrapper">
-            <img class="graphic" src="images/planning.svg" alt="graphic of girl thinking" />
+            <div class="hero-graphic"></div>
             <h1>Plan Your Visit</h1>
           </div>
           <p>Here you will find all the relevant information you need to plan your day out.</p>
         </div>
       </section>
       <section class="information__section">
-        <div class="location">
+        <div class="location" id="location">
           <h2>Location</h2>
           <p>Arctic Science Museum Tromsø</p>
           <p>Tromsø Town center</p>
@@ -116,14 +114,14 @@
           <h2>Admission</h2>
           <p>The entrance is free for all.</p>
           <p>There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum. If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.</p>
-          <a href="involved.html" class="cta-button">
+          <a href="involved.html#email-us" class="cta-button">
             <span>Contact us</span>
             <i class="contact__icon icon"></i>
           </a>
         </div>
       </section>
       <section class="amenities__section">
-        <div class="food-drink">
+        <div class="food-drink" id="food-drink">
           <h2>Food and Drink</h2>
           <div class="images__wrapper">
             <div class="circular-image">
@@ -149,7 +147,7 @@
             <p>- You could say we thought of everything.</p>
           </div>
         </div>
-        <div class="shop">
+        <div class="shop" id="shop">
           <h2>Shop</h2>
           <div class="images__wrapper">
             <div class="circular-image"><img src="images/museum_shop-small.jpg" alt="image of science museum giftshop and dinosaur memorabelia" /></div>
@@ -158,7 +156,7 @@
           <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.</p>
         </div>
       </section>
-      <section class="accessibility__section">
+      <section class="accessibility__section" id="accessibility">
         <h2>Accessibility</h2>
         <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired, and of course Assistance and Therapy Dogs are welcome.</p>
       </section>
@@ -224,12 +222,12 @@
       <section class="quick-links__section">
         <h3>Quick Links</h3>
         <div class="quick-links__wrapper">
-          <a href="involved.html" class="quick-link__footer">Contact</a>
-          <a href="visit.html" class="quick-link__footer">Accessibility</a>
-          <a href="involved.html" class="quick-link__footer">Volunteering</a>
-          <a href="involved.html" class="quick-link__footer">Donate</a>
+          <a href="involved.html#email-us" class="quick-link__footer">Contact</a>
+          <a href="#accessibility" class="quick-link__footer">Accessibility</a>
+          <a href="involved.html#volenteering" class="quick-link__footer">Volunteering</a>
+          <a href="involved.html#donate" class="quick-link__footer">Donate</a>
           <a href="events.html" class="quick-link__footer">Special Events</a>
-          <a href="visit.html" class="quick-link__footer">Find Us</a>
+          <a href="#location" class="quick-link__footer">Find Us</a>
         </div>
       </section>
     </footer>
