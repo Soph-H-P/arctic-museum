@@ -157,7 +157,7 @@
   /*GLOBAL STYLES*/
 
   html {
-    scroll-padding-top: 152px;
+    scroll-margin-top: 152px;
   }
 
   main {
@@ -270,7 +270,7 @@
 
   /*EXPLORE PAGE*/
   .explore__html {
-    scroll-padding-top: 200px;
+    scroll-margin-top: 200px;
   }
 
   .explore-card__wrapper {
@@ -483,7 +483,7 @@
   /*GLOBAL STYLES*/
 
   html {
-    scroll-padding-top: 162px;
+    scroll-margin-top: 162px;
   }
 
   main {
@@ -529,7 +529,7 @@
   /*EXPLORE PAGE*/
 
   .explore__html {
-    scroll-padding-top: 220px;
+    scroll-margin-top: 220px;
   }
 
   .explore-card__wrapper {
@@ -630,7 +630,7 @@
 
   /*EXPLORE PAGE*/
   .explore__html {
-    scroll-padding-top: 142px;
+    scroll-margin-top: 142px;
   }
 
   .to-do__section,
