@@ -73,13 +73,14 @@ main section {
   color: var(--dark-font-color);
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 0.9rem;
   align-items: center;
   padding: 0.1rem;
   border: solid 2px var(--link-color);
 }
 
 .subject__label p {
-  margin: 1rem auto;
+  margin: 1rem;
 }
 
 .come-see__section p {
@@ -98,7 +99,7 @@ main section {
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  margin: -2rem auto -3.75rem auto;
+  margin: -2rem auto -1.5rem auto;
 }
 
 .sun {
