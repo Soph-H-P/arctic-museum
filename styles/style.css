@@ -81,7 +81,7 @@ header {
 /*logo*/
 .logo__wrapper {
   display: inline-block;
-  padding: 5px;
+  margin: 5px;
 }
 
 .logo__top {
