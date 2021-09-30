@@ -73,6 +73,13 @@ input[type="number"] {
 .submit-button:disabled {
   border: 1px solid var(--shadow-color);
   background-color: var(--light-background-color);
+  color: var(--shadow-color);
+}
+
+.submit-button:hover:disabled{
+  transform: none;
+  box-shadow: none;
+  
 }
 
 .error-message {

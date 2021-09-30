@@ -32,21 +32,20 @@
         </div>
       </a>
       <div class="nav__wrapper">
-        <input type="checkbox" id="hamburger-menu__checkbox" />
-        <label class="menu-checkbox__label" for="hamburger-menu__checkbox">
+        <!-- <input type="checkbox" id="hamburger-menu__checkbox" /> -->
+        <button class="menu-button" for="hamburger-menu__checkbox">
           <div class="menu__icon">
-            <div class="bluebar-top"></div>
-            <div class="redbar"></div>
-            <div class="bluebar-bottom"></div>
+            <span class="bluebar-top"></span>
+            <span class="redbar"></span>
+            <span class="bluebar-bottom"></span>
           </div>
-        </label>
+        </button>
         <nav>
           <form class="search__wrapper">
-            <input type="checkbox" id="search-box__checkbox" />
-            <label for="search-box__checkbox">
-              <i class="search__icon icon"></i>
-            </label>
             <div class="search-input__wrapper">
+              <label aria-label="search" for="search__input"
+                ><i class="search__icon icon"></i
+              ></label>
               <input id="search__input" type="text" placeholder="Search..." />
             </div>
           </form>
@@ -150,5 +149,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

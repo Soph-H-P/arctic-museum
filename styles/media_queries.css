@@ -182,15 +182,14 @@
     display: inline;
   }
 
-  #hamburger-menu__checkbox ~ nav,
-  #hamburger-menu__checkbox:checked ~ nav {
+nav {
     position: static;
     display: flex;
     justify-content: flex-end;
     height: auto;
   }
 
-  #hamburger-menu__checkbox ~ nav ul {
+   nav ul {
     display: flex;
     margin: 0px;
   }
@@ -204,17 +203,6 @@
     transform: scale(1.1);
   }
 
-  #search-box__checkbox {
-    display: none;
-  }
-
-  #search-box__checkbox ~ div {
-    display: none;
-  }
-
-  #search-box__checkbox:checked ~ div {
-    display: inline-block;
-  }
 
   .search__wrapper {
     position: absolute;
