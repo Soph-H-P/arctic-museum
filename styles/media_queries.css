@@ -153,7 +153,7 @@
 }
 
 /*----------------------------------------MIN 610PX----------*/
-@media (min-width: 610px) {
+@media (min-width: 700px) {
   /*GLOBAL STYLES*/
 
   html {
@@ -182,15 +182,14 @@
     display: inline;
   }
 
-  #hamburger-menu__checkbox ~ nav,
-  #hamburger-menu__checkbox:checked ~ nav {
+  nav {
     position: static;
     display: flex;
     justify-content: flex-end;
     height: auto;
   }
 
-  #hamburger-menu__checkbox ~ nav ul {
+  nav ul {
     display: flex;
     margin: 0px;
   }
@@ -202,18 +201,6 @@
   /*search*/
   .search__icon:hover {
     transform: scale(1.1);
-  }
-
-  #search-box__checkbox {
-    display: none;
-  }
-
-  #search-box__checkbox ~ div {
-    display: none;
-  }
-
-  #search-box__checkbox:checked ~ div {
-    display: inline-block;
   }
 
   .search__wrapper {
@@ -303,6 +290,20 @@
   .exhibition-img__wrapper {
     width: 500px;
     height: 300px;
+  }
+
+  .close_modal_button {
+    background: url("../images/close.svg") center / 44px 44px no-repeat;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 10%;
+    right: 20px;
+    border: none;
+  }
+
+  .exhibition-img__wrapper.full_screen_view {
+    top: 100px;
   }
 
   /*EVENTS PAGE*/
@@ -483,7 +484,7 @@
 }
 
 /*----------------------------------------MIN 810PX----------*/
-@media (min-width: 810px) {
+@media (min-width: 930px) {
   /*GLOBAL STYLES*/
 
   html {
@@ -507,7 +508,7 @@
   }
 
   p {
-    font-size: 1.2rem
+    font-size: 1.2rem;
   }
 
   /*hero sections*/

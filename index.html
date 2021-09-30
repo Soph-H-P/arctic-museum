@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Come join us on a journey through the arctic tundra learn about local research, explore exciting exhibits and best of all its free." />
+    <meta
+      name="description"
+      content="Come join us on a journey through the arctic tundra learn about local research, explore exciting exhibits and best of all its free."
+    />
     <title>Home | Arctic Museum</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/index.css" />
@@ -26,21 +32,15 @@
         </div>
       </a>
       <div class="nav__wrapper">
-        <input type="checkbox" id="hamburger-menu__checkbox" />
-        <label class="menu-checkbox__label" for="hamburger-menu__checkbox">
-          <div class="menu__icon">
-            <div class="bluebar-top"></div>
-            <div class="redbar"></div>
-            <div class="bluebar-bottom"></div>
-          </div>
-        </label>
+        <button aria-label="menu button" class="menu-button menu__icon">
+          <span id="top" class="bluebar-top"></span>
+          <span id="middle" class="redbar"></span>
+          <span id="bottom" class="bluebar-bottom"></span>
+        </button>
         <nav>
           <form class="search__wrapper">
-            <input type="checkbox" id="search-box__checkbox" />
-            <label for="search-box__checkbox">
-              <i class="search__icon icon"></i>
-            </label>
             <div class="search-input__wrapper">
+              <label aria-label="search" for="search__input"><i class="search__icon icon"></i></label>
               <input id="search__input" type="text" placeholder="Search..." />
             </div>
           </form>
@@ -50,6 +50,7 @@
             <li><a href="events.html">Events</a></li>
             <li><a href="visit.html">Visit</a></li>
             <li><a href="involved.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -58,18 +59,28 @@
       <section class="hero__section index-hero__section">
         <div class="hero-text__div">
           <h1>Arctic Science Museum</h1>
-          <p>Lets explore together! Come join us at the Arctic Science Museum in Tromsø, where we’re committed to making science accessible to all.</p>
+          <p>
+            Lets explore together! Come join us at the Arctic Science Museum in Tromsø, where we’re
+            committed to making science accessible to all.
+          </p>
         </div>
       </section>
       <section class="explore__section">
         <div class="explore-text__div text__div">
           <h2>Explore</h2>
-          <p>The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.</p>
+          <p>
+            The aim of our museum is to create a space where everyone can experience the wonders of
+            our discoveries and perhaps even ignite a lifelong passion to continue the exploration
+            of the world around us.
+          </p>
         </div>
         <div class="explore-links__div">
           <div class="expanding-image__div">
             <a href="explore.html#to-do">
-              <img src="images/microscope-graphic.svg" alt="Graphic of girl looking down microscope" />
+              <img
+                src="images/microscope-graphic.svg"
+                alt="Graphic of girl looking down microscope"
+              />
               <h3>To do & See</h3>
             </a>
           </div>
@@ -91,26 +102,38 @@
         <div class="exhibition-text__div text__div">
           <h2>Top Exhibitions</h2>
           <p>
-            We believe science should not be confined to the textbook, but brought to life through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science
-            come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).
+            We believe science should not be confined to the textbook, but brought to life through
+            exhibits. This is why we have over 1000 different exhibits on the many varied subjects
+            of science to explore. Many of these exhibits are designed for you to interact with and
+            play around to see science come to life (apart from the dinosaur exhibits – they only
+            come to life at night when everyone’s gone home).
           </p>
         </div>
         <div class="exhibition-links__div">
           <div class="expanding-image__div circular-image">
             <a href="exhibitions.html#snow-discovery">
-              <img src="images/kids_microscope_small.jpg" alt="image of children looking down microscopes" />
+              <img
+                src="images/kids_microscope_small.jpg"
+                alt="image of children looking down microscopes"
+              />
               <h3>Snow Discovery</h3>
             </a>
           </div>
           <div class="expanding-image__div circular-image">
             <a href="exhibitions.html#solar-system">
-              <img src="images/solar_system_small.jpg" alt="image of a room with model of the solar system" />
+              <img
+                src="images/solar_system_small.jpg"
+                alt="image of a room with model of the solar system"
+              />
               <h3>Solar System</h3>
             </a>
           </div>
           <div class="expanding-image__div circular-image">
             <a href="explore.html#theatre">
-              <img src="images/planetarium.jpg" alt="image of people watching a 3D theatre screen" />
+              <img
+                src="images/planetarium.jpg"
+                alt="image of people watching a 3D theatre screen"
+              />
               <h3>3D Theatre</h3>
             </a>
           </div>
@@ -127,9 +150,13 @@
         <div class="this-month-text__div text__div">
           <h2>Happening This Month</h2>
           <h3>The Night in the Museum!</h3>
-          <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.</p>
-          <a href="involved.html#tickets" class="cta-button dominant-cta">
-            <span>Book now</span>
+          <p>
+            Get your family together for an exciting night in the museum as you sleep over beside
+            dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as
+            we go exploring the wonders of science.
+          </p>
+          <a href="contact.html" class="cta-button dominant-cta">
+            <span>Reserve Tickets</span>
             <i class="ticket__icon icon"></i>
           </a>
           <a href="events.html" class="cta-button non-dominant-cta">
@@ -141,24 +168,37 @@
       <section class="amenities__section">
         <div class="amenities-text__div text__div">
           <h2>Amenities</h2>
-          <p>What sort of museum is complete without the opportunity for a little rest and refuel. You will be delighted by our range of eateries, you are bound to find somewhere to suit your needs. Don’t forget to visit the gift shop on the way out!</p>
+          <p>
+            What sort of museum is complete without the opportunity for a little rest and refuel.
+            You will be delighted by our range of eateries, you are bound to find somewhere to suit
+            your needs. Don’t forget to visit the gift shop on the way out!
+          </p>
         </div>
         <div class="amenities-links__div">
           <div class="expanding-image__div circular-image">
             <a href="visit.html#food-drink">
-              <img src="images/cafe_kids_small.jpg" alt="image of children colouring at a restaurant" />
+              <img
+                src="images/cafe_kids_small.jpg"
+                alt="image of children colouring at a restaurant"
+              />
               <h3>Family Restaurant</h3>
             </a>
           </div>
           <div class="expanding-image__div circular-image">
             <a href="visit.html#food-drink">
-              <img src="images/coffee_shop-small.jpg" alt="image of teenagers getting coffee at the coffee shop" />
+              <img
+                src="images/coffee_shop-small.jpg"
+                alt="image of teenagers getting coffee at the coffee shop"
+              />
               <h3>Coffee Shop</h3>
             </a>
           </div>
           <div class="expanding-image__div circular-image">
             <a href="visit.html#shop">
-              <img src="images/museum_shop-small.jpg" alt="image of science museum giftshop and dinosaur memorabelia" />
+              <img
+                src="images/museum_shop-small.jpg"
+                alt="image of science museum giftshop and dinosaur memorabelia"
+              />
               <h3>Gift Shop</h3>
             </a>
           </div>
@@ -203,16 +243,26 @@
         <h3># ASMTromsø</h3>
         <div class="square-insta-images__div">
           <div class="insta-image__wrapper">
-            <img src="images/plasma_tube-small.jpg" alt="instagram image of plasma tube and people in dark room" />
+            <img
+              src="images/plasma_tube-small.jpg"
+              alt="instagram image of plasma tube and people in dark room"
+            />
           </div>
           <div class="insta-image__wrapper">
             <img src="images/magnets_small.jpg" alt="childrens hands playing with small magnets" />
           </div>
           <div class="insta-image__wrapper">
-            <img class="insta-image" src="images/kid_hot_chocolate-small.jpg" alt="Happy child with smiling cup of hot chocolate" />
+            <img
+              class="insta-image"
+              src="images/kid_hot_chocolate-small.jpg"
+              alt="Happy child with smiling cup of hot chocolate"
+            />
           </div>
           <div class="insta-image__wrapper">
-            <img src="images/cookies-small.jpg" alt="green plate with stack of chocolate chip cookies" />
+            <img
+              src="images/cookies-small.jpg"
+              alt="green plate with stack of chocolate chip cookies"
+            />
           </div>
           <div class="insta-image__wrapper">
             <img src="images/plasma-globe.jpg" alt="plasma globe with hand in the background" />
@@ -228,7 +278,7 @@
       <section class="quick-links__section">
         <h3>Quick Links</h3>
         <div class="quick-links__wrapper">
-          <a href="involved.html#email-us" class="quick-link__footer">Contact</a>
+          <a href="contact.html" class="quick-link__footer">Contact</a>
           <a href="visit.html#accessibility" class="quick-link__footer">Accessibility</a>
           <a href="involved.html#volenteering" class="quick-link__footer">Volunteering</a>
           <a href="involved.html#donate" class="quick-link__footer">Donate</a>
@@ -236,6 +286,7 @@
           <a href="visit.html#location" class="quick-link__footer">Find Us</a>
         </div>
       </section>
-    </footer>
+   </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Have a look at our weekly and monthly talks and seminars, plus exhibitions on loan that will only be around for a limited time."
+      content="Come join us on a journey through the arctic tundra learn about local research, explore exciting exhibits and best of all its free."
     />
-    <title>Special Events | Arctic Museum</title>
+    <title>Home | Arctic Museum</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Audiowide&family=Nanum+Gothic:wght@400;700;800&display=swap"
@@ -15,7 +15,7 @@
     />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/events.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
     <link rel="stylesheet" href="styles/media_queries.css" />
   </head>
   <body>
@@ -49,71 +49,80 @@
           <ul>
             <li><a href="explore.html">Explore</a></li>
             <li><a href="exhibitions.html">Exhibitions</a></li>
-            <li><a class="active" href="events.html">Events</a></li>
+            <li><a href="events.html">Events</a></li>
             <li><a href="visit.html">Visit</a></li>
             <li><a href="involved.html">Get Involved</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main class="events-page-only">
-      <section class="hero__section">
-        <div class="hero-text__div">
-          <div class="hero-image-title__wrapper">
-            <div class="hero-graphic"></div>
-            <h1 class="page-title">Special Events</h1>
+    <main>
+      <section class="contact">
+        <div class="contact-forms__div">
+          <div class="email-us" id="email-us">
+            <h2>Email Us</h2>
+            <div class="send-success">
+              <i class="check__icon icon"></i>
+              <p>Your message has been sent please expect a response within 3-5 working days</p>
+            </div>
+
+            <form
+              class="contact__form"
+              action="https://soph-web-dev.eu/arctic-museum/wp-json/contact-form-7/v1/contact-forms/5/feedback"
+              method="post"
+            >
+              <label for="name">Name</label>
+              <p class="error-message" id="name-error">Please give your full name</p>
+              <input placeholder="Sophie" type="text" id="name" name="your-name" />
+              <label for="email">Email</label>
+              <p class="error-message" id="email-error">Please enter a valid email</p>
+              <input
+                placeholder="example@something.com"
+                type="email"
+                id="email"
+                name="your-email"
+              />
+              <label for="subject">Choose email subject</label>
+              <select id="subject" name="your-subject">
+                <option value="general">General enquiry</option>
+                <option value="accessibility">Accessibility concerns</option>
+                <option value="feedback">Feedback</option>
+                <option value="stars-club">Young stars club</option>
+                <option value="summer-school">Summer school</option>
+                <option value="summer-school">Internships</option>
+                <option value="summer-school">Reserve tickets</option>
+                <option value="other">Other</option>
+              </select>
+              <label for="message">Write your message here</label>
+              <p class="error-message" id="message-error">Please remember to write us a message</p>
+              <textarea
+                placeholder="I would like to know more about..."
+                id="message"
+                cols="30"
+                rows="10"
+                name="your-message"
+              ></textarea>
+              <p class="sending">Sending...</p>
+              <button disabled type="submit" class="cta-button submit-button">
+                <span>Send</span>
+                <i class="contact__icon icon"></i>
+              </button>
+            </form>
           </div>
-          <p>
-            We hold weekly talks and monthly events free of charge, there is plenty of diversity, so
-            if you are a student, teacher or researcher then there is guaranteed to be something
-            that will tickle your interest.
-          </p>
         </div>
-      </section>
-      <section class="events__section">
-        <div class="event__card">
-          <h2>Visiting Professor of Aeronautics</h2>
-          <h3>Wednesday 3rd March 2021</h3>
-          <p>
-            It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute
-            of Technology will be delivering 3 lectures on the development of aeronautics and where
-            the future lies in this exciting ‘space’.
-          </p>
-          <div class="circular-image">
-            <img src="images/astrophysics-small.jpg" alt="visiting professor Sheila Widnall" />
-          </div>
-        </div>
-        <div class="event__card" id="night-in-museum">
-          <h2>Night in the Museum</h2>
-          <h3>Friday 19th March 2021</h3>
-          <p>
-            Get your family together for an exciting night in the museum as you sleep over beside
-            dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as
-            we go exploring the wonders of science.
-          </p>
-          <div class="circular-image">
-            <img
-              src="images/building-night-small.jpg"
-              alt="image of arctic science museum at night with northern lights in the sky"
-            />
-          </div>
-        </div>
-        <div class="event__card">
-          <h2>Energetica Exhibition on Loan</h2>
-          <h3>Throughout March 2021</h3>
-          <p>
-            On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming
-            to the Community Science Museum. It’s a series of installations that allow visitors to
-            experience the power of the elements as we harness them. From solar energy powering
-            lighting, to ‘Wind Island’ that shows how turbines are able to use and control wind to
-            create power.
-          </p>
-          <div class="circular-image">
-            <img
-              src="images/turbines-small.jpg"
-              alt="image of wind turbines agains sun setting sky"
-            />
+        <div class="engage">
+          <h2>Engage With Us</h2>
+          <div class="image__wrapper">
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img src="images/instagram.svg" alt="instagram logo"
+            /></a>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="images/facebook.svg" alt="facebook logo"
+            /></a>
+            <a href="https://twitter.com" target="_blank"
+              ><img src="images/twitter.svg" alt="twitter logo"
+            /></a>
           </div>
         </div>
       </section>
@@ -193,13 +202,14 @@
         <div class="quick-links__wrapper">
           <a href="contact.html" class="quick-link__footer">Contact</a>
           <a href="visit.html#accessibility" class="quick-link__footer">Accessibility</a>
-          <a href="involved.html#volenteering" class="quick-link__footer">Volunteering</a>
-          <a href="involved.html#donate" class="quick-link__footer">Donate</a>
+          <a href="#volenteering" class="quick-link__footer">Volunteering</a>
+          <a href="#donate" class="quick-link__footer">Donate</a>
           <a href="events.html" class="quick-link__footer">Special Events</a>
           <a href="visit.html#location" class="quick-link__footer">Find Us</a>
         </div>
       </section>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>

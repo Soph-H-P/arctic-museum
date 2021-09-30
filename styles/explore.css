@@ -24,7 +24,7 @@ main h2 {
   width: 100%;
   min-width: 320px;
   background-color: var(--light-font-color);
-  box-shadow: 0px 2px 5px 0px var(--shaddow-color);
+  box-shadow: 0px 2px 5px 0px var(--shadow-color);
 }
 
 .skip-to__section ul {
@@ -73,7 +73,7 @@ main h2 {
 .to-do__section,
 .resources__section,
 .research__section,
- .to-do-text__div {
+.to-do-text__div {
   text-align: center;
 }
 
