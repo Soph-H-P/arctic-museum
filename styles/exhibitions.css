@@ -45,6 +45,47 @@ main section {
   margin: 0 auto;
 }
 
+.close_modal_button {
+  background: url("../images/close.svg") center / 44px 44px no-repeat;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 5%;
+  right: 20px;
+  border: none;
+}
+
+.close_modal_button:hover {
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: scale(1.2);
+}
+
+.exhibition-img__wrapper.full_screen_view {
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 50px;
+  margin: 0px auto;
+  background-color: grey;
+  padding: 10px;
+  z-index: 100;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border-radius: 0;
+}
+
+.exhibition-img__wrapper.full_screen_view img {
+width: 90%;
+height: 90%;
+max-width: 900px;
+margin: 0 auto;
+}
+
 .exhibition-img__wrapper img {
   width: 100%;
   height: 100%;

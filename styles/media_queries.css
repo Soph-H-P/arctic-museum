@@ -182,14 +182,14 @@
     display: inline;
   }
 
-nav {
+  nav {
     position: static;
     display: flex;
     justify-content: flex-end;
     height: auto;
   }
 
-   nav ul {
+  nav ul {
     display: flex;
     margin: 0px;
   }
@@ -202,7 +202,6 @@ nav {
   .search__icon:hover {
     transform: scale(1.1);
   }
-
 
   .search__wrapper {
     position: absolute;
@@ -291,6 +290,20 @@ nav {
   .exhibition-img__wrapper {
     width: 500px;
     height: 300px;
+  }
+
+  .close_modal_button {
+    background: url("../images/close.svg") center / 44px 44px no-repeat;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 10%;
+    right: 20px;
+    border: none;
+  }
+
+  .exhibition-img__wrapper.full_screen_view {
+    top: 100px;
   }
 
   /*EVENTS PAGE*/
@@ -495,7 +508,7 @@ nav {
   }
 
   p {
-    font-size: 1.2rem
+    font-size: 1.2rem;
   }
 
   /*hero sections*/
