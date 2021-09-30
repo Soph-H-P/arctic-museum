@@ -280,7 +280,8 @@ footer section {
   margin: 1rem auto;
 }
 
-footer h3 {
+footer h3,
+footer th {
   font-family: var(--heading-font), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -410,8 +411,8 @@ footer a {
 }
 
 .non-dominant-cta {
-  background-color: #f5e1e1;
-  color: var(--main-cta-color);
+  background-color: #f5eeee;
+  color: #b50600;
   border: solid 2px var(--main-cta-color);
   height: 3.15rem;
 }
