@@ -76,10 +76,9 @@ input[type="number"] {
   color: var(--shadow-color);
 }
 
-.submit-button:hover:disabled{
+.submit-button:hover:disabled {
   transform: none;
   box-shadow: none;
-  
 }
 
 .error-message {

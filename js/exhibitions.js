@@ -68,38 +68,36 @@ const renderHtml = async (exhibitionsArray) => {
   });
   const loader = document.querySelector(".loading");
   loader.remove();
-//View photos 
-const images = document.querySelectorAll(".exhibition-img__wrapper")
-images.forEach(image => {
+  //View photos
+  const images = document.querySelectorAll(".exhibition-img__wrapper");
+  images.forEach((image) => {
     image.addEventListener("click", (e) => {
-        const element = e.target.tagName;
-        if (image.classList.contains("full_screen_view") && element !== "IMG") {
-          image.classList.remove("full_screen_view");
-          document.querySelector(".close_modal_button").remove();
-        } else {
-          image.classList.add("full_screen_view");
-          image.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+      const element = e.target.tagName;
+      if (image.classList.contains("full_screen_view") && element !== "IMG") {
+        image.classList.remove("full_screen_view");
+        document.querySelector(".close_modal_button").remove();
+      } else {
+        image.classList.add("full_screen_view");
+        image.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
 
-          e.target.style.cursor = `default`;
+        e.target.style.cursor = `default`;
 
-          if (!document.querySelector(".close_modal_button")) {
-            image.innerHTML += `<button class="close_modal_button" aria-label="close full image view"></button>`;
-          }
+        if (!document.querySelector(".close_modal_button")) {
+          image.innerHTML += `<button class="close_modal_button" aria-label="close full image view"></button>`;
         }
-      });
-      image.addEventListener("mouseover", (e) => {
-        const element = e.target.tagName;
-        image.classList.contains("full_screen_view") && element !== "IMG"
-          ? (image.style.cursor = `pointer`)
-          : image.classList.contains("full_screen_view") && element === "IMG"
-          ? (e.target.style.cursor = `default`)
-          : !image.classList.contains("full_screen_view") && element === "IMG"
-          ? (e.target.style.cursor = `pointer`)
-          : (e.target.style.cursor = `default`);
-      });
-})
-
-
+      }
+    });
+    image.addEventListener("mouseover", (e) => {
+      const element = e.target.tagName;
+      image.classList.contains("full_screen_view") && element !== "IMG"
+        ? (image.style.cursor = `pointer`)
+        : image.classList.contains("full_screen_view") && element === "IMG"
+        ? (e.target.style.cursor = `default`)
+        : !image.classList.contains("full_screen_view") && element === "IMG"
+        ? (e.target.style.cursor = `pointer`)
+        : (e.target.style.cursor = `default`);
+    });
+  });
 };
 
 if (postSearchTerm) {

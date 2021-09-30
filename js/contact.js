@@ -186,11 +186,11 @@ const handleContactFormSubmit = async (e) => {
     response.ok
       ? (contactForm.reset(),
         (sendSuccess.style.display = "flex"),
-        (sendSuccess.scrollIntoView({behavior: "smooth"})),
+        sendSuccess.scrollIntoView({ behavior: "smooth" }),
         (sending.style.display = "none"))
       : (sendSuccess.innerHTML = "Message cannot be sent at this time");
   } catch (error) {
-    sendSuccess.style.display = "flec"
+    sendSuccess.style.display = "flec";
     sendSuccess.innerHTML = "<p>Messaging not possible at this time please try again later</p>";
     sendSuccess.style.backgroundColor = "var(--main-cta-color)";
     console.log(error);

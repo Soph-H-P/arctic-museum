@@ -172,7 +172,8 @@
     font-size: 1.5rem;
   }
 
-  h3, th {
+  h3,
+  th {
     font-size: 1.25rem;
     font-weight: 800;
   }

@@ -80,10 +80,10 @@ main section {
 }
 
 .exhibition-img__wrapper.full_screen_view img {
-width: 90%;
-height: 90%;
-max-width: 900px;
-margin: 0 auto;
+  width: 90%;
+  height: 90%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .exhibition-img__wrapper img {
